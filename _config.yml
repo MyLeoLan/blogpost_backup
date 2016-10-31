@@ -116,5 +116,10 @@ search:
 
 #自动部署
 #deploy:
-  type: git
-  coding.net: git@git.coding.net:leolan/leolan.git,master
+#  type: git
+#  coding.net: git@git.coding.net:leolan/leolan.git,master
+
+#deploy:
+  type: github
+  repository: https://git.coding.net/leolan/leolan.git
+    branch: master
