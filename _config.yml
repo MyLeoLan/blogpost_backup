@@ -1,0 +1,120 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Leo Lan的博客
+subtitle:  有时候正是不报期望的人做出了人们不敢期望的事！
+description: Better late than never.
+author: Leo Lan
+language: zh-Hans
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://leolan.coding.me/
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 15
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
+
+# Disqus #Disqus评论系统
+disqus_shortname: leolan
+
+#plugins: #插件，例如生成 RSS 和站点地图的
+#- hexo-generator-feed
+#- hexo-generator-sitemap
+
+# Social links
+social:
+  GitHub: https://github.com/myleolan
+  CSDN: http://blog.csdn.net/lan842632
+  OSchina: https://my.oschina.net/leolan/blog
+  #Twitter: https://twitter.com/lmintlcx
+  #Zhihu: http://www.zhihu.com/people/lmintlcx
+  #Douban: http://www.douban.com/people/lmintlcx
+  Weibo: http://weibo.com/u/3233729080
+
+duoshuo_shortname: leolan
+# 多说热评文章 true 或者 false
+duoshuo_hotartical: true
+# 多说分享服务
+duoshuo_share: true
+# 百度分享服务
+baidushare: true
+
+
+#打赏功能
+#reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+#wechatpay: /path/to/wechat-reward-image（二维码网址）
+#alipay: /path/to/alipay-reward-image
+
+#站点建立时间
+since: 2016
+
+#百度分析
+baidu_analytics: dc0e85252eeff3a87aa87f35d92a8d33
+
+#本地搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+#自动部署
+#deploy:
+  type: git
+  coding.net: git@git.coding.net:leolan/leolan.git,master

@@ -1,0 +1,852 @@
+{"name":"hexo","hostname":"PCOS-1609191323","pid":7916,"level":20,"msg":"Hexo version: 3.2.2","time":"2016-10-31T06:40:50.014Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":7916,"level":20,"msg":"Working directory: ~\\hexo\\","time":"2016-10-31T06:40:50.014Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":7916,"level":60,"err":{"message":"duplicated mapping key at line 123, column 1:\n    \n    ^","name":"YAMLException","stack":"YAMLException: duplicated mapping key at line 123, column 1:\n    \n    ^\n    at generateError (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:162:10)\n    at throwError (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:168:9)\n    at storeMappingPair (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:305:7)\n    at readBlockMapping (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1065:9)\n    at composeNode (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1326:12)\n    at readDocument (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1488:3)\n    at loadDocuments (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1544:5)\n    at Object.load (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1561:19)\n    at Hexo.yamlHelper (C:\\Users\\Administrator\\hexo\\node_modules\\hexo\\lib\\plugins\\renderer\\yaml.js:7:15)\n    at Hexo.tryCatcher (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Hexo.<anonymous> (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\method.js:15:34)\n    at C:\\Users\\Administrator\\hexo\\node_modules\\hexo\\lib\\hexo\\render.js:61:21\n    at tryCatcher (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:510:31)\n    at Promise._settlePromise (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:567:18)\n    at Promise._settlePromise0 (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:612:10)\n    at Promise._settlePromises (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:691:18)\n    at Async._drainQueue (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\async.js:138:16)\n    at Async._drainQueues (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\async.js:148:10)\n    at Immediate.Async.drainQueues (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:637:20)\n    at tryOnImmediate (timers.js:610:5)"},"msg":"duplicated mapping key at line 123, column 1:\n    \n    ^","time":"2016-10-31T06:40:50.232Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Hexo version: 3.2.2","time":"2016-10-31T06:42:04.045Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Working directory: ~\\hexo\\","time":"2016-10-31T06:42:04.045Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Config loaded: ~\\hexo\\_config.yml","time":"2016-10-31T06:42:04.263Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-deployer-git","time":"2016-10-31T06:42:04.294Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-deployer-heroku","time":"2016-10-31T06:42:04.294Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-deployer-openshift","time":"2016-10-31T06:42:04.310Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-deployer-rsync","time":"2016-10-31T06:42:04.310Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-generator-archive","time":"2016-10-31T06:42:04.310Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-generator-category","time":"2016-10-31T06:42:04.326Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-generator-feed","time":"2016-10-31T06:42:04.326Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-generator-index","time":"2016-10-31T06:42:04.326Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-generator-searchdb","time":"2016-10-31T06:42:04.370Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-generator-sitemap","time":"2016-10-31T06:42:04.373Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-generator-tag","time":"2016-10-31T06:42:04.376Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-renderer-ejs","time":"2016-10-31T06:42:04.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-renderer-marked","time":"2016-10-31T06:42:04.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-renderer-stylus","time":"2016-10-31T06:42:04.670Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-server","time":"2016-10-31T06:42:04.764Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Plugin loaded: hexo-wordcount","time":"2016-10-31T06:42:04.858Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Script loaded: themes\\next\\scripts\\merge-configs.js","time":"2016-10-31T06:42:04.858Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\full-image.js","time":"2016-10-31T06:42:04.858Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\center-quote.js","time":"2016-10-31T06:42:04.858Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\group-pictures.js","time":"2016-10-31T06:42:04.858Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Loading database.","time":"2016-10-31T06:42:04.873Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":30,"msg":"Start processing","time":"2016-10-31T06:42:04.951Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: 404.html","time":"2016-10-31T06:42:05.029Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: 200.png","time":"2016-10-31T06:42:05.029Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: _posts/2016-10-21-OpenResty_install.md","time":"2016-10-31T06:42:05.076Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: _posts/2016-10-21-ruby_dev_build.md","time":"2016-10-31T06:42:05.076Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: about/index.md","time":"2016-10-31T06:42:05.076Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: categories/index.md","time":"2016-10-31T06:42:05.076Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: tags/index.md","time":"2016-10-31T06:42:05.076Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Theme config loaded.","time":"2016-10-31T06:42:05.123Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: _config.yml","time":"2016-10-31T06:42:05.123Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/css/main.styl","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/avatar.gif","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/cc-by-nc-nd.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/cc-by-nc-sa.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/cc-by-nc.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/cc-by-nd.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/cc-by-sa.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/cc-by.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/cc-zero.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/loading.gif","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/placeholder.gif","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/quote-l.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/quote-r.svg","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/searchicon.png","time":"2016-10-31T06:42:05.154Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/de.yml","time":"2016-10-31T06:42:05.170Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/default.yml","time":"2016-10-31T06:42:05.170Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_layout.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/archive.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/category.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/index.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/page.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/post.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/schedule.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/tag.swig","time":"2016-10-31T06:42:05.358Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/en.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/fr-FR.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/id.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/ko.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/pt-BR.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/pt.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/ru.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/zh-Hans.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/zh-hk.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/zh-tw.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: languages/ja.yml","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/affix.js","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/bootstrap.js","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/hook-duoshuo.js","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/motion.js","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/post-details.js","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/scrollspy.js","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/utils.js","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fastclick/LICENSE","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fastclick/README.md","time":"2016-10-31T06:42:05.378Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fastclick/bower.json","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/bower.json","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/CONTRIBUTING.md","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/README.md","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/bower.json","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.lazyload.js","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.scrollstop.js","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/HELP-US-OUT.txt","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/velocity/bower.json","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/velocity/velocity.min.js","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.js","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.min.js","time":"2016-10-31T06:42:05.394Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/images/avatar.jpg","time":"2016-10-31T06:42:05.410Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/jquery/index.js","time":"2016-10-31T06:42:05.410Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_macro/post-collapse.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_macro/reward.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_macro/sidebar.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_macro/wechat-subscriber.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/comments.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/footer.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/head.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/header.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/pagination.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/search.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/baidu-push.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/boostrap.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/commons.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/vendors.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/duoshuo-hot-articles.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_macro/post.swig","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/js/src/schemes/pisces.js","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading.gif","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading@2x.gif","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_overlay.png","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/blank.gif","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite.png","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite@2x.png","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.css","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.js","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.pack.js","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.js","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.min.js","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css.map","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.min.css","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff2","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.min.js","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.pack.js","time":"2016-10-31T06:42:05.456Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/schemes/mist.swig","time":"2016-10-31T06:42:05.472Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/schemes/muse.swig","time":"2016-10-31T06:42:05.472Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/FontAwesome.otf","time":"2016-10-31T06:42:05.472Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.eot","time":"2016-10-31T06:42:05.472Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff","time":"2016-10-31T06:42:05.472Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/velocity/velocity.js","time":"2016-10-31T06:42:05.472Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/head/external-fonts.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/search/localsearch.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/search/swiftype.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/search/tinysou.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/share/add-this.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/share/baidushare.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/share/duoshuo_share.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_partials/share/jiathis.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/pages/post-details.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/schemes/pisces.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/comments.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/lean-analytics.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/mathjax.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/localsearch.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/schedule.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/tinysou.swig","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/fancybox_buttons.png","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.css","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.js","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-media.js","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.css","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.js","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.ttf","time":"2016-10-31T06:42:05.488Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/baidu-analytics.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/busuanzi-counter.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/cnzz-analytics.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/facebook-sdk.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/google-analytics.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/tencent-analytics.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/disqus.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/duoshuo.swig","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.svg","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: _posts/hello-world.md","time":"2016-10-31T06:42:05.503Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: page","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: post","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: archive","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: category","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: feed","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: index","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: search","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: tag","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: asset","time":"2016-10-31T06:42:05.897Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":30,"msg":"Hexo is running at http://localhost:5500/. Press Ctrl+C to stop.","time":"2016-10-31T06:42:05.913Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Database saved","time":"2016-10-31T06:42:05.928Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Rendering index: index.html","time":"2016-10-31T06:42:14.138Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: layout/_macro/post.swig","time":"2016-10-31T06:43:26.656Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: page","time":"2016-10-31T06:43:26.778Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: post","time":"2016-10-31T06:43:26.778Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: archive","time":"2016-10-31T06:43:26.778Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: category","time":"2016-10-31T06:43:26.778Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: feed","time":"2016-10-31T06:43:26.778Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: index","time":"2016-10-31T06:43:26.778Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: search","time":"2016-10-31T06:43:26.778Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T06:43:26.779Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: tag","time":"2016-10-31T06:43:26.779Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: asset","time":"2016-10-31T06:43:26.787Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T06:43:26.798Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: page","time":"2016-10-31T06:43:26.931Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: post","time":"2016-10-31T06:43:26.932Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: archive","time":"2016-10-31T06:43:26.932Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: category","time":"2016-10-31T06:43:26.932Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: feed","time":"2016-10-31T06:43:26.932Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: index","time":"2016-10-31T06:43:26.933Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: search","time":"2016-10-31T06:43:26.933Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T06:43:26.934Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: tag","time":"2016-10-31T06:43:26.934Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Generator: asset","time":"2016-10-31T06:43:26.936Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11796,"level":20,"msg":"Rendering index: index.html","time":"2016-10-31T06:43:34.197Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11096,"level":20,"msg":"Hexo version: 3.2.2","time":"2016-10-31T07:01:25.236Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11096,"level":20,"msg":"Working directory: ~\\hexo\\","time":"2016-10-31T07:01:25.236Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":11096,"level":60,"err":{"message":"duplicated mapping key at line 121, column 1:\n    \n    ^","name":"YAMLException","stack":"YAMLException: duplicated mapping key at line 121, column 1:\n    \n    ^\n    at generateError (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:162:10)\n    at throwError (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:168:9)\n    at storeMappingPair (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:305:7)\n    at readBlockMapping (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1065:9)\n    at composeNode (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1326:12)\n    at readDocument (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1488:3)\n    at loadDocuments (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1544:5)\n    at Object.load (C:\\Users\\Administrator\\hexo\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1561:19)\n    at Hexo.yamlHelper (C:\\Users\\Administrator\\hexo\\node_modules\\hexo\\lib\\plugins\\renderer\\yaml.js:7:15)\n    at Hexo.tryCatcher (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Hexo.<anonymous> (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\method.js:15:34)\n    at C:\\Users\\Administrator\\hexo\\node_modules\\hexo\\lib\\hexo\\render.js:61:21\n    at tryCatcher (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:510:31)\n    at Promise._settlePromise (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:567:18)\n    at Promise._settlePromise0 (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:612:10)\n    at Promise._settlePromises (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\promise.js:691:18)\n    at Async._drainQueue (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\async.js:138:16)\n    at Async._drainQueues (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\async.js:148:10)\n    at Immediate.Async.drainQueues (C:\\Users\\Administrator\\hexo\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:637:20)\n    at tryOnImmediate (timers.js:610:5)"},"msg":"duplicated mapping key at line 121, column 1:\n    \n    ^","time":"2016-10-31T07:01:25.471Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Hexo version: 3.2.2","time":"2016-10-31T07:01:53.796Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Working directory: ~\\hexo\\","time":"2016-10-31T07:01:53.796Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Config loaded: ~\\hexo\\_config.yml","time":"2016-10-31T07:01:54.014Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-deployer-git","time":"2016-10-31T07:01:54.045Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-deployer-openshift","time":"2016-10-31T07:01:54.045Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-deployer-heroku","time":"2016-10-31T07:01:54.045Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-deployer-rsync","time":"2016-10-31T07:01:54.045Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-generator-archive","time":"2016-10-31T07:01:54.061Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-generator-feed","time":"2016-10-31T07:01:54.061Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-generator-index","time":"2016-10-31T07:01:54.061Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-generator-searchdb","time":"2016-10-31T07:01:54.092Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-generator-category","time":"2016-10-31T07:01:54.108Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-generator-sitemap","time":"2016-10-31T07:01:54.108Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-generator-tag","time":"2016-10-31T07:01:54.108Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-renderer-ejs","time":"2016-10-31T07:01:54.108Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-renderer-marked","time":"2016-10-31T07:01:54.123Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-renderer-stylus","time":"2016-10-31T07:01:54.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-server","time":"2016-10-31T07:01:54.493Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Plugin loaded: hexo-wordcount","time":"2016-10-31T07:01:54.587Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Script loaded: themes\\next\\scripts\\merge-configs.js","time":"2016-10-31T07:01:54.587Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\center-quote.js","time":"2016-10-31T07:01:54.587Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\full-image.js","time":"2016-10-31T07:01:54.587Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\group-pictures.js","time":"2016-10-31T07:01:54.587Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Loading database.","time":"2016-10-31T07:01:54.602Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":30,"msg":"Start processing","time":"2016-10-31T07:01:54.680Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: 404.html","time":"2016-10-31T07:01:54.758Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: 200.png","time":"2016-10-31T07:01:54.774Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: _posts/2016-10-21-OpenResty_install.md","time":"2016-10-31T07:01:54.805Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: _posts/2016-10-21-ruby_dev_build.md","time":"2016-10-31T07:01:54.805Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: about/index.md","time":"2016-10-31T07:01:54.805Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: categories/index.md","time":"2016-10-31T07:01:54.805Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: tags/index.md","time":"2016-10-31T07:01:54.805Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Theme config loaded.","time":"2016-10-31T07:01:54.868Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: _config.yml","time":"2016-10-31T07:01:54.868Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/css/main.styl","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/avatar.gif","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/cc-by-nc-nd.svg","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/cc-by-nc-sa.svg","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/cc-by-nc.svg","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/cc-by-sa.svg","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/cc-by-nd.svg","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/cc-by.svg","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/cc-zero.svg","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/loading.gif","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/placeholder.gif","time":"2016-10-31T07:01:54.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/quote-l.svg","time":"2016-10-31T07:01:54.914Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/quote-r.svg","time":"2016-10-31T07:01:54.914Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/searchicon.png","time":"2016-10-31T07:01:54.914Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/default.yml","time":"2016-10-31T07:01:54.930Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/de.yml","time":"2016-10-31T07:01:54.930Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_layout.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/archive.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/category.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/index.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/page.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/post.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/schedule.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/tag.swig","time":"2016-10-31T07:01:55.102Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/en.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/fr-FR.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/id.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/ja.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/ko.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/pt-BR.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/pt.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/ru.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/zh-Hans.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/zh-hk.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: languages/zh-tw.yml","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/affix.js","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/bootstrap.js","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/motion.js","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/hook-duoshuo.js","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/post-details.js","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/scrollspy.js","time":"2016-10-31T07:01:55.117Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/utils.js","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fastclick/LICENSE","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fastclick/README.md","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fastclick/bower.json","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/HELP-US-OUT.txt","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/bower.json","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/CONTRIBUTING.md","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/README.md","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/bower.json","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.lazyload.js","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.scrollstop.js","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/velocity/bower.json","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/velocity/velocity.min.js","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.js","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.min.js","time":"2016-10-31T07:01:55.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/images/avatar.jpg","time":"2016-10-31T07:01:55.148Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/jquery/index.js","time":"2016-10-31T07:01:55.148Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_macro/reward.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_macro/post-collapse.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_macro/sidebar.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_macro/wechat-subscriber.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/comments.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/duoshuo-hot-articles.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/footer.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/header.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/pagination.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/head.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/search.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/boostrap.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/commons.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/baidu-push.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/vendors.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_macro/post.swig","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/js/src/schemes/pisces.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/blank.gif","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading.gif","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading@2x.gif","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_overlay.png","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite.png","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite@2x.png","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.css","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.pack.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.min.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css.map","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.min.css","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff2","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.min.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.pack.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/FontAwesome.otf","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.eot","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/velocity/velocity.js","time":"2016-10-31T07:01:55.195Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/schemes/mist.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/schemes/muse.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/head/external-fonts.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/share/add-this.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/share/baidushare.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/share/duoshuo_share.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/share/jiathis.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/search/localsearch.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/search/swiftype.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_partials/search/tinysou.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/schemes/pisces.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/pages/post-details.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/comments.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/lean-analytics.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/localsearch.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/mathjax.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/schedule.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/tinysou.swig","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/fancybox_buttons.png","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-media.js","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.css","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.js","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.css","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.js","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.ttf","time":"2016-10-31T07:01:55.226Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/baidu-analytics.swig","time":"2016-10-31T07:01:55.243Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/busuanzi-counter.swig","time":"2016-10-31T07:01:55.243Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/cnzz-analytics.swig","time":"2016-10-31T07:01:55.250Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/facebook-sdk.swig","time":"2016-10-31T07:01:55.250Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/google-analytics.swig","time":"2016-10-31T07:01:55.250Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/tencent-analytics.swig","time":"2016-10-31T07:01:55.250Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/disqus.swig","time":"2016-10-31T07:01:55.250Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/duoshuo.swig","time":"2016-10-31T07:01:55.250Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.svg","time":"2016-10-31T07:01:55.251Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:01:55.253Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: _posts/hello-world.md","time":"2016-10-31T07:01:55.254Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: page","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: post","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: index","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: search","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: category","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:01:55.644Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:01:55.660Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:01:55.660Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":30,"msg":"Hexo is running at http://localhost:5500/. Press Ctrl+C to stop.","time":"2016-10-31T07:01:55.675Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Database saved","time":"2016-10-31T07:01:55.691Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: page","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: post","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: index","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: search","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: category","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:01:55.800Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Rendering index: index.html","time":"2016-10-31T07:02:02.052Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":10980,"level":20,"msg":"Rendering post: 2016/10/31/2016-10-21-OpenResty_install/index.html","time":"2016-10-31T07:02:18.736Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Hexo version: 3.2.2","time":"2016-10-31T07:11:48.574Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Working directory: ~\\hexo\\","time":"2016-10-31T07:11:48.574Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Config loaded: ~\\hexo\\_config.yml","time":"2016-10-31T07:11:48.793Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Script loaded: themes\\next\\scripts\\merge-configs.js","time":"2016-10-31T07:11:48.824Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\center-quote.js","time":"2016-10-31T07:11:48.824Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\full-image.js","time":"2016-10-31T07:11:48.824Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\group-pictures.js","time":"2016-10-31T07:11:48.824Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-deployer-heroku","time":"2016-10-31T07:11:48.824Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-deployer-openshift","time":"2016-10-31T07:11:48.824Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-deployer-rsync","time":"2016-10-31T07:11:48.824Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-generator-archive","time":"2016-10-31T07:11:48.839Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-deployer-git","time":"2016-10-31T07:11:48.839Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-generator-category","time":"2016-10-31T07:11:48.839Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-generator-index","time":"2016-10-31T07:11:48.839Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-generator-feed","time":"2016-10-31T07:11:48.855Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-generator-searchdb","time":"2016-10-31T07:11:48.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-generator-tag","time":"2016-10-31T07:11:48.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-generator-sitemap","time":"2016-10-31T07:11:48.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-renderer-ejs","time":"2016-10-31T07:11:48.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-renderer-marked","time":"2016-10-31T07:11:48.902Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-server","time":"2016-10-31T07:11:48.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-wordcount","time":"2016-10-31T07:11:49.089Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Plugin loaded: hexo-renderer-stylus","time":"2016-10-31T07:11:49.355Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Loading database.","time":"2016-10-31T07:11:49.371Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":30,"msg":"Start processing","time":"2016-10-31T07:11:49.464Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: 404.html","time":"2016-10-31T07:11:49.542Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: 200.png","time":"2016-10-31T07:11:49.558Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: _posts/2016-10-21-OpenResty_install.md","time":"2016-10-31T07:11:49.589Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: _posts/2016-10-21-ruby_dev_build.md","time":"2016-10-31T07:11:49.589Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: about/index.md","time":"2016-10-31T07:11:49.589Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: categories/index.md","time":"2016-10-31T07:11:49.589Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: tags/index.md","time":"2016-10-31T07:11:49.589Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Theme config loaded.","time":"2016-10-31T07:11:49.652Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: _config.yml","time":"2016-10-31T07:11:49.652Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/css/main.styl","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/avatar.gif","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/cc-by-nc-nd.svg","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/cc-by-nc-sa.svg","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/cc-by-nc.svg","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/cc-by-nd.svg","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/cc-by-sa.svg","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/cc-by.svg","time":"2016-10-31T07:11:49.667Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/cc-zero.svg","time":"2016-10-31T07:11:49.683Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/loading.gif","time":"2016-10-31T07:11:49.683Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/placeholder.gif","time":"2016-10-31T07:11:49.683Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/quote-l.svg","time":"2016-10-31T07:11:49.683Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/quote-r.svg","time":"2016-10-31T07:11:49.683Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/searchicon.png","time":"2016-10-31T07:11:49.683Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/de.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/en.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/default.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/fr-FR.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/id.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/ja.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/ko.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/pt-BR.yml","time":"2016-10-31T07:11:49.698Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_layout.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/archive.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/category.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/index.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/page.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/post.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/schedule.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/tag.swig","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/zh-Hans.yml","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/zh-hk.yml","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/ru.yml","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/zh-tw.yml","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: languages/pt.yml","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/affix.js","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/bootstrap.js","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/hook-duoshuo.js","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/post-details.js","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/motion.js","time":"2016-10-31T07:11:49.886Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/scrollspy.js","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/utils.js","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fastclick/LICENSE","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fastclick/bower.json","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fastclick/README.md","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/HELP-US-OUT.txt","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/bower.json","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/CONTRIBUTING.md","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/bower.json","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.lazyload.js","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/README.md","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.scrollstop.js","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/velocity/bower.json","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/velocity/velocity.min.js","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.js","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.min.js","time":"2016-10-31T07:11:49.901Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/images/avatar.jpg","time":"2016-10-31T07:11:49.917Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/jquery/index.js","time":"2016-10-31T07:11:49.917Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_macro/post-collapse.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_macro/reward.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_macro/post.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_macro/sidebar.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_macro/wechat-subscriber.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/comments.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/duoshuo-hot-articles.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/footer.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/head.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/header.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/pagination.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/search.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/boostrap.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/commons.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/baidu-push.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/vendors.swig","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/js/src/schemes/pisces.js","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/blank.gif","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading.gif","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading@2x.gif","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_overlay.png","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite.png","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite@2x.png","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.css","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.js","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.pack.js","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.js","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.min.js","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css.map","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.min.css","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff2","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.min.js","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.pack.js","time":"2016-10-31T07:11:49.964Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/schemes/mist.swig","time":"2016-10-31T07:11:49.979Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/schemes/muse.swig","time":"2016-10-31T07:11:49.979Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/FontAwesome.otf","time":"2016-10-31T07:11:49.979Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.eot","time":"2016-10-31T07:11:49.979Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff","time":"2016-10-31T07:11:49.979Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/velocity/velocity.js","time":"2016-10-31T07:11:49.979Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/head/external-fonts.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/search/localsearch.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/search/swiftype.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/search/tinysou.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/share/add-this.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/share/duoshuo_share.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/share/baidushare.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_partials/share/jiathis.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/pages/post-details.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/schemes/pisces.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/comments.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/lean-analytics.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/localsearch.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/mathjax.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/schedule.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/tinysou.swig","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/fancybox_buttons.png","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.css","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.js","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-media.js","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.css","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.js","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.ttf","time":"2016-10-31T07:11:49.995Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/cnzz-analytics.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/busuanzi-counter.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/baidu-analytics.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/facebook-sdk.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/google-analytics.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/tencent-analytics.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/disqus.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/duoshuo.swig","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.svg","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: _posts/hello-world.md","time":"2016-10-31T07:11:50.010Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:11:50.430Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":30,"msg":"Hexo is running at http://localhost:5500/. Press Ctrl+C to stop.","time":"2016-10-31T07:11:50.446Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Database saved","time":"2016-10-31T07:11:50.461Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Rendering index: index.html","time":"2016-10-31T07:11:54.915Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Rendering post: 2016/10/31/2016-10-21-ruby_dev_build/index.html","time":"2016-10-31T07:12:00.965Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Rendering post: 2016/10/31/2016-10-21-ruby_dev_build/index.html","time":"2016-10-31T07:12:51.757Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Rendering post: 2016/10/31/2016-10-21-OpenResty_install/index.html","time":"2016-10-31T07:13:52.657Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Rendering archive: archives/index.html","time":"2016-10-31T07:14:22.854Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Rendering page: tags/index.html","time":"2016-10-31T07:14:26.600Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Rendering page: about/index.html","time":"2016-10-31T07:14:32.508Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:14:52.821Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:14:52.899Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:14:53.055Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:14:53.071Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:14:53.087Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:14:53.246Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: about/index.md","time":"2016-10-31T07:15:08.798Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:15:08.950Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:15:08.950Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:15:08.950Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:15:08.950Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:15:08.951Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:15:08.951Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:15:08.951Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:15:08.951Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:15:08.951Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:15:08.958Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:15:08.974Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:15:09.105Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:15:09.106Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:15:09.107Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:15:32.736Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:15:32.814Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:15:32.939Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:15:32.986Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:15:33.001Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:15:33.142Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:15:34.061Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: page","time":"2016-10-31T07:15:34.186Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: post","time":"2016-10-31T07:15:34.186Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:15:34.186Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: category","time":"2016-10-31T07:15:34.186Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: index","time":"2016-10-31T07:15:34.202Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:15:34.202Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: search","time":"2016-10-31T07:15:34.202Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:15:34.202Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:15:34.202Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":12316,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:15:34.202Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Hexo version: 3.2.2","time":"2016-10-31T07:16:15.962Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Working directory: ~\\hexo\\","time":"2016-10-31T07:16:15.962Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Config loaded: ~\\hexo\\_config.yml","time":"2016-10-31T07:16:16.180Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-deployer-git","time":"2016-10-31T07:16:16.212Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-deployer-openshift","time":"2016-10-31T07:16:16.227Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-deployer-heroku","time":"2016-10-31T07:16:16.227Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-deployer-rsync","time":"2016-10-31T07:16:16.227Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-generator-category","time":"2016-10-31T07:16:16.245Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-generator-archive","time":"2016-10-31T07:16:16.245Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-generator-feed","time":"2016-10-31T07:16:16.245Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-generator-index","time":"2016-10-31T07:16:16.245Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-generator-searchdb","time":"2016-10-31T07:16:16.276Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-generator-sitemap","time":"2016-10-31T07:16:16.292Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-generator-tag","time":"2016-10-31T07:16:16.292Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-renderer-marked","time":"2016-10-31T07:16:16.292Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-renderer-ejs","time":"2016-10-31T07:16:16.292Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-renderer-stylus","time":"2016-10-31T07:16:16.588Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-server","time":"2016-10-31T07:16:16.666Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Plugin loaded: hexo-wordcount","time":"2016-10-31T07:16:16.760Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Script loaded: themes\\next\\scripts\\merge-configs.js","time":"2016-10-31T07:16:16.760Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\full-image.js","time":"2016-10-31T07:16:16.760Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\center-quote.js","time":"2016-10-31T07:16:16.760Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Script loaded: themes\\next\\scripts\\tags\\group-pictures.js","time":"2016-10-31T07:16:16.775Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Loading database.","time":"2016-10-31T07:16:16.775Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":30,"msg":"Start processing","time":"2016-10-31T07:16:16.869Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: 404.html","time":"2016-10-31T07:16:16.947Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: 200.png","time":"2016-10-31T07:16:16.962Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: _posts/2016-10-21-OpenResty_install.md","time":"2016-10-31T07:16:16.994Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: _posts/2016-10-21-ruby_dev_build.md","time":"2016-10-31T07:16:16.994Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: tags/index.md","time":"2016-10-31T07:16:17.025Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: categories/index.md","time":"2016-10-31T07:16:17.025Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Theme config loaded.","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: _config.yml","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/css/main.styl","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/avatar.gif","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/cc-by-nc-nd.svg","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/cc-by-nc-sa.svg","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/cc-by-nc.svg","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/cc-by-nd.svg","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/cc-by-sa.svg","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/cc-by.svg","time":"2016-10-31T07:16:17.072Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/cc-zero.svg","time":"2016-10-31T07:16:17.087Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/loading.gif","time":"2016-10-31T07:16:17.087Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/placeholder.gif","time":"2016-10-31T07:16:17.087Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/quote-l.svg","time":"2016-10-31T07:16:17.087Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/quote-r.svg","time":"2016-10-31T07:16:17.087Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/searchicon.png","time":"2016-10-31T07:16:17.087Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: about/index.md","time":"2016-10-31T07:16:17.103Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_layout.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/archive.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/category.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/index.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/page.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/schedule.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/post.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/tag.swig","time":"2016-10-31T07:16:17.307Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/de.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/default.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/en.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/fr-FR.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/id.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/ja.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/pt-BR.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/ko.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/pt.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/ru.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/zh-Hans.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/zh-hk.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: languages/zh-tw.yml","time":"2016-10-31T07:16:17.325Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/affix.js","time":"2016-10-31T07:16:17.326Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/bootstrap.js","time":"2016-10-31T07:16:17.326Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/hook-duoshuo.js","time":"2016-10-31T07:16:17.326Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/motion.js","time":"2016-10-31T07:16:17.326Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/post-details.js","time":"2016-10-31T07:16:17.327Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/scrollspy.js","time":"2016-10-31T07:16:17.327Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/utils.js","time":"2016-10-31T07:16:17.330Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fastclick/LICENSE","time":"2016-10-31T07:16:17.331Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fastclick/README.md","time":"2016-10-31T07:16:17.331Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fastclick/bower.json","time":"2016-10-31T07:16:17.331Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/HELP-US-OUT.txt","time":"2016-10-31T07:16:17.332Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/bower.json","time":"2016-10-31T07:16:17.332Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/CONTRIBUTING.md","time":"2016-10-31T07:16:17.332Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/README.md","time":"2016-10-31T07:16:17.332Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/bower.json","time":"2016-10-31T07:16:17.332Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.lazyload.js","time":"2016-10-31T07:16:17.334Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/jquery_lazyload/jquery.scrollstop.js","time":"2016-10-31T07:16:17.334Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/velocity/bower.json","time":"2016-10-31T07:16:17.334Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/velocity/velocity.min.js","time":"2016-10-31T07:16:17.335Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.js","time":"2016-10-31T07:16:17.335Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/velocity/velocity.ui.min.js","time":"2016-10-31T07:16:17.335Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/images/avatar.jpg","time":"2016-10-31T07:16:17.346Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/jquery/index.js","time":"2016-10-31T07:16:17.346Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_macro/post.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_macro/post-collapse.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_macro/reward.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_macro/sidebar.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_macro/wechat-subscriber.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/comments.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/duoshuo-hot-articles.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/footer.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/head.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/header.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/pagination.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/search.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/baidu-push.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/boostrap.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/commons.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/vendors.swig","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/js/src/schemes/pisces.js","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/blank.gif","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading.gif","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_loading@2x.gif","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_overlay.png","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite.png","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/fancybox_sprite@2x.png","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.css","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.js","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/jquery.fancybox.pack.js","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.js","time":"2016-10-31T07:16:17.385Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fastclick/lib/fastclick.min.js","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.css.map","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/css/font-awesome.min.css","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff2","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.min.js","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/ua-parser-js/dist/ua-parser.pack.js","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/schemes/mist.swig","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/schemes/muse.swig","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/FontAwesome.otf","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.eot","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.woff","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/velocity/velocity.js","time":"2016-10-31T07:16:17.400Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/head/external-fonts.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/search/localsearch.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/search/swiftype.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/search/tinysou.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/share/add-this.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/share/duoshuo_share.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/share/baidushare.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_partials/share/jiathis.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/pages/post-details.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/schemes/pisces.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/comments.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/lean-analytics.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/localsearch.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/mathjax.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/schedule.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/tinysou.swig","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/fancybox_buttons.png","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.css","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-buttons.js","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-media.js","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.css","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/fancybox/source/helpers/jquery.fancybox-thumbs.js","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.ttf","time":"2016-10-31T07:16:17.416Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/baidu-analytics.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/busuanzi-counter.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/facebook-sdk.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/tencent-analytics.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/google-analytics.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/disqus.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/comments/duoshuo.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: layout/_scripts/third-party/analytics/cnzz-analytics.swig","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: source/vendors/font-awesome/fonts/fontawesome-webfont.svg","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: debug.log","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Processed: _posts/hello-world.md","time":"2016-10-31T07:16:17.432Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: page","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: post","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: category","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: archive","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: feed","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: index","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: search","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: sitemap","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: tag","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Generator: asset","time":"2016-10-31T07:16:18.086Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":30,"msg":"Hexo is running at http://localhost:5500/. Press Ctrl+C to stop.","time":"2016-10-31T07:16:18.101Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Database saved","time":"2016-10-31T07:16:18.133Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Rendering page: about/index.html","time":"2016-10-31T07:16:20.862Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Rendering archive: archives/index.html","time":"2016-10-31T07:16:23.874Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Rendering page: about/index.html","time":"2016-10-31T07:16:26.359Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Rendering page: categories/index.html","time":"2016-10-31T07:16:29.910Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Rendering page: tags/index.html","time":"2016-10-31T07:16:32.077Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Rendering archive: archives/index.html","time":"2016-10-31T07:16:34.339Z","v":0}
+{"name":"hexo","hostname":"PCOS-1609191323","pid":13228,"level":20,"msg":"Rendering page: about/index.html","time":"2016-10-31T07:16:36.272Z","v":0}
