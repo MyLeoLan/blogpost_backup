@@ -20,14 +20,19 @@ irb(main):001:0>exit
 ---
 
 # Centos #
-`yum list ruby `看看版本是多少，版本太低就源码安装。
-```yum install openssl* openssl-devel zlib-devel gcc gcc-c++ make autoconf readline-devel curl-devel expat-devel gettext-devel -y```
+`yum list ruby `看看yum仓库版本是多少，版本太低就源码安装。
+```
+yum install openssl* openssl-devel zlib-devel gcc gcc-c++ make autoconf readline-devel curl-devel expat-devel gettext-devel -y
+```
 
 关闭iptables和SELINUX（不关闭也是可以的）
-`service iptables stop`
-`setenforce 0`
-`vi /etc/sysconfig/selinux`     修改  SELINUX=disabled
-安装：
+```
+service iptables stop
+setenforce 0
+vi /etc/sysconfig/selinux
+SELINUX=disabled         #禁用selinux  
+```
+源码编译安装：
 ```
 wget http://ftp.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
 tar zxvf ruby-2.3.1.tar.gz
@@ -70,7 +75,10 @@ irb(main):001:0>exit
 ---
 
 # Mac10.12 #
-xcode升级到8.0及以上版本
+mac在10.11之后的版本，安全机制发生了变更，/usr/local/目录已经没有写权限了。
+
+* xcode升级到8.0及以上版本
+
 不要用mac自带的ruby及brew方式安装ruby，容易出各种错误。
 安装rvm（ruby的版本控制器）https://github.com/rvm/rvm
 `curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby --rails --trace`
@@ -78,7 +86,9 @@ xcode升级到8.0及以上版本
 
 安装homebrew（官网http://brew.sh/index_zh-cn.html）https://github.com/Homebrew/homebrew
 /usr/bin/ruby使用的是mac自带的2.0版本的ruby，也可以直接用ruby使用新版本的ruby。
-```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
+```ruby
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+```
 `brew -v`
 
 列出ruby可安装的版本信息
@@ -86,7 +96,7 @@ xcode升级到8.0及以上版本
 安装一个ruby版本
 `rvm install 2.3.1`
 如果想设置为默认版本，可以用这条命令来完成
-`rvm use 2.3.1 --default`     一般上一步安装好久已经设为默认了
+`rvm use 2.3.1 --default`     一般上一步安装好就已经设为默认了
 查看已安装的ruby
 `rvm list`
 卸载一个已安装ruby版本
@@ -126,8 +136,10 @@ http://www.ruby-lang.org/zh_cn/downloads/ （源码）
 `gem sources --remove https://rubygems.org/`
 `gem sources -a https://ruby.taobao.org/`
 `gem sources -l`
-windows 不要更换源，添加不了淘宝源。
-Mac 如果报-SSL错误请把https改为http。
+
+* windows 不要更换源，添加不了淘宝源，就换回原来的源。
+
+* Mac 如果报-SSL错误请把https改为http。
 *** CURRENT SOURCES ***
 http://ruby.taobao.org/
 

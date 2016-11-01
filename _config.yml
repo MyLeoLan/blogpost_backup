@@ -65,10 +65,22 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
+# Deployment部署
+## 官方文档Docs: https://hexo.io/docs/deployment.html   有部署到各种服务器的方法
+## 参考：http://www.lxway.com/240950852.htm
+#不管是github还是coding，type都填写git
 deploy:
-  type:
+- type: git
+  repo: git@git.coding.net:leolan/leolan.git,master
+#deploy:
+#- type: git
+#  repo:
+#- type: heroku（另一种云平台）
+#  repo:
+
+
+
+
 
 # Disqus #Disqus评论系统
 disqus_shortname: leolan
@@ -80,12 +92,13 @@ disqus_shortname: leolan
 # Social links
 social:
   GitHub: https://github.com/myleolan
+  Coding: https://coding.net/u/leolan
   CSDN: http://blog.csdn.net/lan842632
   OSchina: https://my.oschina.net/leolan/blog
   #Twitter: https://twitter.com/lmintlcx
   #Zhihu: http://www.zhihu.com/people/lmintlcx
   #Douban: http://www.douban.com/people/lmintlcx
-  Weibo: http://weibo.com/u/3233729080
+  #Weibo: http://weibo.com/u/3233729080
 
 duoshuo_shortname: leolan
 # 多说热评文章 true 或者 false
@@ -114,12 +127,3 @@ search:
   format: html
   limit: 10000
 
-#自动部署
-#deploy:
-#  type: git
-#  coding.net: git@git.coding.net:leolan/leolan.git,master
-
-#deploy:
-  type: github
-  repository: https://git.coding.net/leolan/leolan.git
-    branch: master
