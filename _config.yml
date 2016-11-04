@@ -110,9 +110,9 @@ baidushare: true
 
 
 #打赏功能
-#reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
-#wechatpay: /path/to/wechat-reward-image（二维码网址）
-#alipay: http://ofyfogrgx.bkt.clouddn.com/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE.jpg
+reward_comment: 您的支持将鼓励我继续创作,非常感谢！
+wechatpay: http://ofyfogrgx.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE1.png
+alipay: http://ofyfogrgx.bkt.clouddn.com/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE01.jpg
 
 #站点建立时间
 since: 2016
