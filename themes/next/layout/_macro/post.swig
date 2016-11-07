@@ -199,9 +199,24 @@
         {% endif %}
       {% else %}
         {{ post.content }}
-
----如果您觉得本博客还不错，欢迎继续关注Leo Lan的博客，欢迎多提宝贵意见，非常感谢！---
-
+<!--这里是每篇文章的尾巴-->
+<html>
+	<body>
+		<h1>结语</h1>
+			<p><h5><a href="#" onclick="go_my_site()" rel="external">Leo Lan Blog Share For you!</a></h5></p>
+			<p>如果您觉得本博客还不错，欢迎继续关注Leo Lan的博客，欢迎多提宝贵意见，非常感谢！</p>
+	</body>
+</html>
+<!--
+<html>
+	<body>
+		<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2>
+		<blockquote><p>如果您觉得本博客还不错，欢迎收藏书签，欢迎多提宝贵意见，非常感谢！</p>
+		<footer><strong>Welcome to LeoLan'S BLOG</strong>
+		<cite><a href="#" onclick="go_my_site()" rel="external">Leo Lan Blog Share For you!</a></cite></footer></blockquote></div>
+	</body>
+</html>
+-->
       {% endif  %}
     </div>
 
