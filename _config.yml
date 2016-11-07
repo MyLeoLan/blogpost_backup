@@ -12,7 +12,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://leolan.coding.me/
+url: https://myleolan.github.io/blog
+coding_url: http://leolan.coding.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,6 +73,8 @@ theme: next
 deploy:
 - type: git
   repo: git@git.coding.net:leolan/leolan.git,master
+- type: git
+  repo: git@github.com:MyLeoLan/blog.git,master
 #deploy:
 #- type: git
 #  repo:
@@ -81,13 +84,22 @@ deploy:
 
 
 
-
 # Disqus #Disqus评论系统
 disqus_shortname: leolan
 
-plugins: #插件，例如生成 RSS 和站点地图的
-#- hexo-generator-feed
-#- hexo-generator-sitemap
+
+#plugins: #插件，例如生成 RSS 和站点地图的
+#hexo-generator-sitemap
+#- hexo-generator-baidu-sitemap
+plugins:
+  hexo-generator-feed
+  hexo-generator-baidu-sitemap
+
+sitemap:
+  path: sitemap.xml    
+baidusitemap:
+  baidupath: baidusitemap.xml
+
 
 # Social links
 social:
