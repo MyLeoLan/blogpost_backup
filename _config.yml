@@ -5,15 +5,15 @@
 # Site
 title: Leo Lan的博客
 subtitle:  有时候正是不报期望的人做出了人们不敢期望的事！
-description: Better late than never.
+description: Better late than never
 author: Leo Lan
 language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://myleolan.github.io/blog
-coding_url: http://leolan.coding.me
+url: http://leolan.top
+coding_url: http://leolan.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -58,7 +58,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 15
+per_page: 5
 pagination_dir: page
 
 # Extensions
