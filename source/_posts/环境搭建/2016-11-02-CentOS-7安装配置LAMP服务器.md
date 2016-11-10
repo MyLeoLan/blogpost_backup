@@ -123,3 +123,5 @@ phpinfo();
 权限设置：`chown apache.apache -R /var/www/html`
 
 参考：http://www.osyunwei.com/archives/7829.html
+
+---

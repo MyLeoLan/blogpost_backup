@@ -70,3 +70,4 @@ make install
 ```
 此时安装完成，打开localhost就可以看到nginx页面了。
 
+---
