@@ -35,8 +35,8 @@ page:
   tags: 标签
 
 footer:
-  powered: "由 %s 强力驱动"
-  theme: 主题
+  powered: <a target="_blank" href="http://www.leolan.top">友情链接</a>
+  theme: 您是本站第
 
 
 counter:

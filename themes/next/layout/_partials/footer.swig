@@ -9,25 +9,14 @@
 </div>
 
 <div class="powered-by">
-  {{ __('footer.powered', '<a class="theme-link" href="https://hexo.io">Hexo</a>') }}
+  {{ __('footer.powered', '') }}
 </div>
 
 <div class="theme-info">
-  {{ __('footer.theme') }} -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.{{ theme.scheme }}
-  </a>
+  {{ __('footer.theme') }}<span id="busuanzi_value_site_uv"></span>位访问者
+</span>
 </div>
 
-  host3 = window.location.href;
-  chinadomai3 = "http://leolan.coding.me/";  
-  if (host3.indexOf(chinadomain3)!=-1)  {
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
-  (function(){
-    var bp = document.createElement('script');
-    bp.src = '//push.zhanzhang.baidu.com/push.js';
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-
-                                      }
