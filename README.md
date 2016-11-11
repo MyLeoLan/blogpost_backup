@@ -1,3 +1,5 @@
+comments: false
+---
 
 # Leo Lan 的博客
 博客主页：

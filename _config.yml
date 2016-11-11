@@ -65,6 +65,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+#theme: landscape
 
 # Deployment部署
 ## 官方文档Docs: https://hexo.io/docs/deployment.html   有部署到各种服务器的方法
