@@ -26,7 +26,14 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
+#禁止编译README.md文件，也可以在文件中增加yml文件头layout: false，---结尾
 skip_render:
+    - baidu_verify_7KUhRIqMDW.html
+    - googled7e43f3624e0f703.html
+    - CNAME
+    - README.md
+    - .nojekyll
+    - Staticfile
 
 # Writing  官网：https://hexo.io/zh-cn/docs/writing.html
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -64,8 +71,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
-#theme: landscape
+#theme: next5.0
+theme: next0.4
+
 
 # Deployment部署
 ## 官方文档Docs: https://hexo.io/docs/deployment.html   有部署到各种服务器的方法
@@ -128,7 +136,7 @@ wechatpay: http://ofyfogrgx.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE
 alipay: http://ofyfogrgx.bkt.clouddn.com/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE01.jpg
 
 #站点建立时间
-since: 2015
+since: 2016
 
 #百度分析
 baidu_analytics: dc0e85252eeff3a87aa87f35d92a8d33
