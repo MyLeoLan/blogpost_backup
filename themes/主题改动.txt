@@ -21,12 +21,15 @@ _config.yml
 不算子网站访问量统计，去掉主题自带说明
 /layou/_partials/footer.swig
 
+动态背景
+/layou/_layout.swig
+/source/js/src/particle.js  网上下载
 
 百度链接推送
 /layou/_scripts/baidu-push.swig
 
-
-
+High一下
+layout/_partials/header.swig
 
 
 浏览器留白太多，代码块看起来比较麻烦
