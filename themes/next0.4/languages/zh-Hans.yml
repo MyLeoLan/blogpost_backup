@@ -8,12 +8,12 @@ author: 博主
 
 menu:
   home: 首页
-  archives: 归档
+  archives: 时间轴
   categories: 分类
   schedule: 日程
-  tags: 标签
+  tags: 标签云
   about: 关于
-  search: 搜索
+  search: 本地搜索
   commonweal: 公益404
 
 
@@ -35,7 +35,7 @@ page:
   tags: 标签
 
 footer:
-  powered: <a target="_blank" href="http://www.leolan.top">友情链接</a>
+  powered: <a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备16026009号-2</a>
   theme: 您是本站第
 
 

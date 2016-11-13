@@ -4,6 +4,7 @@ categories:
   - 环境搭建
 tags:
   - Centos7 lanm
+abbrlink: 60501
 date: 2016-11-02 12:21:52
 ---
 

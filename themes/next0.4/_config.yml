@@ -172,8 +172,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggler.
-  #display: post
-  display: always
+  display: post
+  #display: always
   #display: hide
   #display: remove
 
@@ -182,8 +182,8 @@ sidebar:
 #links_title: Links
 #links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links: 
+  小黑: http://mblack.cn
 
 
 # ---------------------------------------------------------------
@@ -372,6 +372,7 @@ fancybox: true
 #    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
 # Be aware that you should use the same version as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
+#vendors下的样式
 vendors:
   # Internal path prefix. Please do not edit it.
   _internal: vendors

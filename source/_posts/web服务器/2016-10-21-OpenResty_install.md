@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "OpenResty（高性能web服务器）"
+title: OpenResty（高性能web服务器）
 categories:
-- web服务器
+  - web服务器
 tags:
-- OpenResty
-- 高性能web服务器
+  - OpenResty
+  - 高性能web服务器
+abbrlink: 29074
 date: 2016-10-31 10:21:24
-
 ---
 
 # OpenResty#

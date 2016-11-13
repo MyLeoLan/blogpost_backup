@@ -4,6 +4,7 @@ categories:
   - 系统管理
 tags:
   - ssh远程重装centos系统
+abbrlink: 11076
 date: 2016-11-02 16:29:28
 ---
 

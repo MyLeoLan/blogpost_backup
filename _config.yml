@@ -6,7 +6,7 @@
 title: Leo Lan的博客
 subtitle:  有时候正是不报期望的人做出了人们不敢期望之事！
 description: Better late than never
-author: Leo Lan
+author: LeoLan
 language: zh-Hans
 timezone: Asia/Shanghai
 
@@ -15,8 +15,13 @@ timezone: Asia/Shanghai
 url: https://www.leolan.top
 coding_url: https://www.leolan.top
 root: /
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
+
+# abbrlink config
+abbrlink:
+  alg: crc16  # 算法：crc16(default) and crc32 
+  rep: dec    # 进制：dec(default) and hex
 
 # Directory
 source_dir: source
@@ -28,12 +33,19 @@ code_dir: downloads/code
 i18n_dir: :lang
 #禁止编译README.md文件，也可以在文件中增加yml文件头layout: false，---结尾
 skip_render:
-    - baidu_verify_7KUhRIqMDW.html
+    - baidu_verify_dc4dBM4StW.html
     - googled7e43f3624e0f703.html
     - CNAME
     - README.md
     - .nojekyll
     - Staticfile
+
+baidu_url_submit:
+  count: 5 ## 比如3，代表提交最新的三个链接
+  host: www.leolan.top ## 在百度站长平台中注册的域名
+  token: http://data.zz.baidu.com/urls?site=www.leolan.top&token=kZ5xboXBFPxQ0g7N ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  path: /baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
 
 # Writing  官网：https://hexo.io/zh-cn/docs/writing.html
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -42,7 +54,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: false   #新建文章时自动生成本地存放图片等资源的文件夹
 relative_link: false
 future: true
 highlight:
@@ -71,8 +83,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: next5.0
-theme: next0.4
+theme: next5.0
+#theme: next0.4
 
 
 # Deployment部署
