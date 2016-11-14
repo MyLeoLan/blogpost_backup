@@ -3,6 +3,7 @@ title:
   category: 分类
   schedule: 日程
   tag: 标签
+  guestbook: 留言板
 
 author: 博主
 
@@ -15,6 +16,7 @@ menu:
   about: 关于
   search: 本地搜索
   commonweal: 公益404
+  guestbook: 给我留言
 
 
 sidebar:
