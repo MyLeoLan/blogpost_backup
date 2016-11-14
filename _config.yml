@@ -108,10 +108,10 @@ theme: next5.1
 deploy:
 - type: git
   repo: git@git.coding.net:leolan/blog.git,master
-  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
+#  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
 - type: git
   repo: git@github.com:MyLeoLan/blog.git,master
-  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
+#  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
 #deploy:
 #- type: git
 #  repo:
