@@ -24,6 +24,8 @@ _config.yml
 动态背景
 /layou/_layout.swig
 /source/js/src/particle.js  网上下载
+背景透明
+在 \themes\next\source\css\_custom\custom.styl 中写上 .content-wrap {background: transparent;}
 
 百度链接推送
 /layou/_scripts/baidu-push.swig
