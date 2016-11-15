@@ -6,20 +6,6 @@
 各种配置
 _config.yml
 
-侧栏标签，网页底部版权
-/languages/zh_Hans.yml
-
-/source/lib（原来的文件名是vendors,github或coding屏蔽此文件夹）
-
-字数统计，不算子统计代码，文章尾部结语，文章尾部标签云链接
-/layou/_macro/post.swig
-
-打赏，最近访客
-/layou/_macro/reward.swig
-
-
-不算子网站访问量统计，去掉主题自带说明
-/layou/_partials/footer.swig
 
 动态背景
 /layou/_layout.swig
@@ -27,11 +13,12 @@ _config.yml
 背景透明
 在 \themes\next\source\css\_custom\custom.styl 中写上 .content-wrap {background: transparent;}
 
-百度链接推送
-/layou/_scripts/baidu-push.swig
+
 
 High一下
 layout/_partials/header.swig
+
+
 
 
 浏览器留白太多，代码块看起来比较麻烦

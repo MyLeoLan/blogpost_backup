@@ -222,7 +222,10 @@
 
     var songs = [
                 "http://ofyfogrgx.bkt.clouddn.com/tongxingSibel%20-%20Im%20Sorry.mp3",
-                "http://ofyfogrgx.bkt.clouddn.com/Music-sunburst.mp3"
+                "http://ofyfogrgx.bkt.clouddn.com/Music-sunburst.mp3",
+                "http://ofyfogrgx.bkt.clouddn.com/blog/20161115/150103346.mp3",
+                "http://ofyfogrgx.bkt.clouddn.com/blog/20161115/150842689.mp3",
+                "http://ofyfogrgx.bkt.clouddn.com//blog/Apple%20&%20Stone%20-%20Lost.mp3"
     ];
 
     
