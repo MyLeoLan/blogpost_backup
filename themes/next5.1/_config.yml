@@ -5,8 +5,8 @@
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /200.png
 
-# Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT, Leo Lan, leolan, Docker, Blog, Node.js, Git, PHP, JAVA, JAVASCRIPT, HTML, CSS, jQuery, Ruby, jekyll, lvm, github, coding, vpn, linux, centos, ubuntu, zabbix, mysql"
+# Set default keywords (Use a comma to separate) 站点关键词，利于SEO
+keywords: "Hexo, NexT, Leo Lan, leolan, Blog, myleolan, lan, coding"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -256,7 +256,7 @@ mathjax:
 ##  type: button
 
 # Share
-#jiathis: true
+jiathis: true
 # Warning: JiaThis does not support https.
 #add_this_id:
 

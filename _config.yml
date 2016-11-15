@@ -79,7 +79,10 @@ tag_map:
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
-# Pagination  单独页面文章数目，需要安装插件
+# Pagination  单独页面文章数目，需要安装以下3个插件
+#npm install --save hexo-generator-index
+#npm install --save hexo-generator-archive
+#npm install --save hexo-generator-tag
 ## Set per_page to 0 to disable pagination
 index_generator:
   per_page: 5
@@ -135,7 +138,7 @@ plugins:
 sitemap:
   path: sitemap.xml    
 baidusitemap:
-  baidupath: baidusitemap.xml
+  path: baidusitemap.xml
 
 
 # Social links 社交链接

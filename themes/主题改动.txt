@@ -7,30 +7,6 @@
 _config.yml
 
 
-动态背景
-/layou/_layout.swig
-/source/js/src/particle.js  网上下载
-背景透明
-在 \themes\next\source\css\_custom\custom.styl 中写上 .content-wrap {background: transparent;}
-
-
-
-High一下
-layout/_partials/header.swig
-
-
-
-
-浏览器留白太多，代码块看起来比较麻烦
-
-参考：https://github.com/iissnan/hexo-theme-next/issues/759#issuecomment-202242848
-如何更改内容区域的宽度？：http://theme-next.iissnan.com/faqs.html
-
-对于 Pisces Scheme，需要同时修改 header 的宽度、.main-inner 的宽度以及 .content-wrap 的宽度。例如，使用百分比（Pisces 的布局定义在 source/css/_schemes/Picses/_layout.styl 中）：
-header{ width: 80%; }
-.container .main-inner { width: 80%; }
-.content-wrap { width: calc(100% - 260px); }
-我并未对这个布局进行测试，自定义修改需要自己进行测试。另外，我觉得超过一定宽度后（一行内文字太多导致换行跨度太大），阅读体验都不怎么样。
 
 /next5.0/source/css/_schemes/Picses/_layout.styl.bak   这是原始的自适应方式，在用的_layout.styl调节为80%
 
