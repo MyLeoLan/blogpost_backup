@@ -43,7 +43,7 @@ menu:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of menu item and value is the name of FontAwsome icon. Key is case-senstive.
 #   When an question mask icon presenting up means that the item has no mapping icon.
-menu_icons:
+menu_icons:   #http://fontawesome.io/icons/
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
