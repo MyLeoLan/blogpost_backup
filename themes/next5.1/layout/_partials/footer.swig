@@ -13,7 +13,7 @@
 </div>
 
 <div class="theme-info">
-  {{ __('footer.theme') }}<span id="busuanzi_value_site_uv"></span>位访问者
+  {{ __('footer.theme') }}<span id="busuanzi_value_site_uv"></span>位小伙伴
 </div>
 
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">

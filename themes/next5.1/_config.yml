@@ -178,11 +178,13 @@ sidebar:
 
 
 # Blogrolls 友情链接
-#links_title: Links
+links_title: 友链
 #links_layout: block
+links_icon: heartbeat
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  Jerry Locke: https://jerry.hk/
+  小黑: http://mblack.cn/
 
 
 # ---------------------------------------------------------------
