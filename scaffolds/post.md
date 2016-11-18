@@ -5,5 +5,5 @@ date: {{ date }}
 categories:
 - 
 tags:
-- 
+- {{ title }}
 ---
