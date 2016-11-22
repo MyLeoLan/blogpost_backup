@@ -8,7 +8,9 @@ _config.yml
 
 
 
-/next5.0/source/css/_schemes/Picses/_layout.styl.bak   这是原始的自适应方式，在用的_layout.styl调节为80%
+/next5.0/source/css/_schemes/Picses/_layout.styl.bak
+这是原始的自适应方式
+_layout.styl.80%是调节为页面的80%
 
 
 

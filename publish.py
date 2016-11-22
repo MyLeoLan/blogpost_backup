@@ -22,7 +22,7 @@ hexo 博客专用，向百度站长平台提交所有网址
 
 url = 'http://data.zz.baidu.com/urls?site=leolan.top&token=kZ5xboXBFPxQ0g7N'
 baidu_sitemap = os.path.join(sys.path[0], 'public', 'baidusitemap.xml')
-google_sitemap = os.path.join(sys.path[0], 'public', 'baidusitemap_zhanwei.xml')
+google_sitemap = os.path.join(sys.path[0], 'public', 'sitemap.xml')
 sitemap = [baidu_sitemap, google_sitemap]
 
 assert (os.path.exists(baidu_sitemap) or os.path.exists(
