@@ -250,11 +250,20 @@
 <html>
   <body>
     <h1>结语</h1>
-      <p><h5><a href="#" onclick="go_my_site()" rel="external">Leo Lan Blog Share For you!</a></h5></p>
       <p>如果您觉得本博客还不错，欢迎继续关注Leo Lan的博客，欢迎多提宝贵意见，非常感谢！</p>
+      <div style="text-align:center;color:#ccc;font-size:14px;">------本文结束<i class="fa fa-paw"></i>感谢阅读------</div>
   </body>
 </html>
+
 <!--
+<html>
+  <body>
+    <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2>
+    <blockquote><p>如果您觉得本博客还不错，欢迎继续关注本博客，欢迎多提宝贵意见，非常感谢！</p></blockquote></div>
+    <div style="text-align:center;color:#ccc;font-size:14px;">------本文结束<i class="fa fa-paw"></i>感谢阅读------</div>
+  </body>
+</html>
+
 <html>
   <body>
     <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2>

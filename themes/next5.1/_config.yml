@@ -11,7 +11,7 @@ keywords: "Hexo, NexT, Leo Lan, leolan, Blog, myleolan, lan, coding"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: https://www.leolan.top/atom.xml
 
 # Specify the date when the site was setup
 #since: 2015
@@ -111,9 +111,9 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
-    size:
-
+    family: Input-Font
+    size: 1px
+#DejaVu Sans Mono | InputMono | Source Code Pro
 
 
 # ---------------------------------------------------------------
@@ -131,13 +131,16 @@ font:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of the item and value is the name of FontAwsome icon. Key is case-senstive.
 #   When an globe mask icon presenting up means that the item has no mapping icon.
-social_icons:
+social_icons:    #http://fontawesome.io/icons/
   enable: true
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  Coding: github-alt
+  Cloud: cloud
+  OSchina: git-square
+  #Twitter: twitter
+  #Weibo: weibo
 
 
 # Sidebar Avatar
@@ -184,6 +187,8 @@ links_icon: heartbeat
 #links_layout: inline
 links:
   Jerry Locke: https://jerry.hk/
+  Raintons: http://login926.top 
+  儿科: https://haiwx.github.io/
   小黑: http://mblack.cn/
 
 

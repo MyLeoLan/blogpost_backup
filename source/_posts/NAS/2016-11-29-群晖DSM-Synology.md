@@ -38,6 +38,10 @@ http://support-cn.synology.me/wordpress/?p=589
 官网容量计算器：[RAID 容量计算器](https://www.synology.com/zh-cn/support/RAID_calculator)
 
 ---
+## 硬盘数据恢复
+当系统或硬盘出现问题导致无法启动时，可以恢复数据，参考：[还原存储在 DiskStation 中的数据](https://www.synology.cn/zh-cn/knowledgebase/faq/579)
+
+---
 ## 群晖绑定自己的域名
 方法有很多，可以在DDNS里设置花生壳、万网账号等。
 
@@ -136,9 +140,10 @@ Exelc打开后启用宏，选择型号后**在空白地方双击生成SN**，记
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/154631465.png)
 
 * 修改指定的SATA口为eSATA口，这样原来装有资料的硬盘就不用格式化，作为eSATA外接硬盘接入，群晖中SATA设备是不支持NTFS格式的。
-修改**esataportcfg**和**internalportcfg**对应的16进制的值。
+修改**esataportcfg**和**internalportcfg**对应的16进制的值，**esataportcfg**值不够位数就写最后三位；**internalportcfg**值要写全。
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/154246686.PNG)
 1-12代表1-12号SATA接口，用作群晖系统盘的那个接口必须是SATA接口，必须由群晖系统来初始化硬盘（数据提前做好备份）
+参考：http://www.7po.com/thread-456016-1-1.html
 
 ---
 #### 修改网络端口

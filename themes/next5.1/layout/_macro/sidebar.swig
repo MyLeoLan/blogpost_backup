@@ -65,6 +65,11 @@
               <i class="fa fa-rss"></i>
               RSS
             </a>
+            
+            <a 
+              <i class="menu-item"></i>
+              <i class="menu-item-icon fa fa-music fa-fw"></i>High</a> </li>
+            </a>
           </div>
         {% endif %}
 

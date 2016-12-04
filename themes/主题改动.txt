@@ -13,8 +13,14 @@ _config.yml
 _layout.styl.80%是调节为页面的80%
 
 
+修改了。/themes/next5.1/layout/_macro/sidebar.swig
+
+{% if theme.rss %}
+          <div class="feed-link motion-element">
+            <a href="{{ url_for(theme.rss) }}" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
 
 
-
-
-
+参考：https://haiwx.github.io/2016/09/02/APlayer/
