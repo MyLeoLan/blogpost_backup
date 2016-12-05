@@ -67,7 +67,7 @@
             </a>
 
 <!-- 自定义High一下的功能 -->
-<a href='javascript:(
+ <a rel="alternate" class="mw-harlem_shake_slow wobble shake" href='javascript:(
    function go() {
    var songs = [
                "http://ofyfogrgx.bkt.clouddn.com/tongxingSibel%20-%20Im%20Sorry.mp3",
@@ -209,8 +209,9 @@
    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
    var a = "mw-strobe_light";
    /* harlem-shake-style.css，替换成你的位置，也可以直接使用：//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css */
-   var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
-   
+   var f = "//7xncbk.com1.z0.glb.clouddn.com/harlem-shake-style.css";  
+   /* var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";  */
+
    var l = "mw_added_css";
    var b = g();
    var w = y();

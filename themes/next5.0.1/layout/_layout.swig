@@ -74,7 +74,7 @@
   {% include '_components/algolia-search/assets.swig' %}
 
 <!-- 背景动画 -->
-<script type="text/javascript" src="/js/src/particle.js"></script>
+<script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"></script>
 
 </body>
 </html>

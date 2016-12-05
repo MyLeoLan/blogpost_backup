@@ -1,0 +1,13 @@
+参数说明
+
+title: 标题
+categories: 分类
+ - dsfs
+ - rtjhg
+tags: 标签
+ - dsfs
+ - rtjhg
+date: 创建时间
+keywords: 关键词1,关键词2
+type: "picture" 图片模式
+top: 10 置顶优先值，数值越大文章越靠前
