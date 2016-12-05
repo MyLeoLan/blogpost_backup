@@ -100,7 +100,7 @@ pagination_dir: page
 # Extensions 主题选择
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next5.1
+theme: next5.0.1
 #theme: next0.4
 
 
