@@ -5,6 +5,6 @@ categories:
 - 
 tags:
 - {{ title }}
-keywords: {{ title }},{{ title }}
+keywords: 
 top: 10
 ---

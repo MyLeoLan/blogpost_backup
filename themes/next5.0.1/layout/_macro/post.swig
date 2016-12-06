@@ -250,7 +250,7 @@
 <html>
   <body>
     <h1>结语</h1>
-      <p>如果您觉得本博客还不错，欢迎继续关注Leo Lan的博客，欢迎多提宝贵意见，非常感谢！</p>
+      <p>如果您觉得本博客还不错，欢迎继续关注本博客，欢迎多提宝贵意见，非常感谢！</p>
       <div style="text-align:center;color:#ccc;font-size:14px;">------本文结束<i class="fa fa-paw"></i>感谢阅读------</div>
   </body>
 </html>

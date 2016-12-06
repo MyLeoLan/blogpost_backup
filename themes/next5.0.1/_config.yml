@@ -80,40 +80,42 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default) 慢的话搜索fonts.googleapis.com即可找到替换地址
-  host: fonts.css.network
+  host: 
+  #fonts.css.network
 
   # Global font settings used on <body> element.
   global:
     # external: true will load this font family from host.
     external: true
     family: Lato
+    #Monda
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: 
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
-    family:
+    family: Roboto
 
   # Font settings for Logo
   # Fallback to `global` font settings.
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
-    size:
+    family: Georgia
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: Input-Font
-    size: 1px
-#DejaVu Sans Mono | InputMono | Source Code Pro
+    family: 
+    size: 14
+#"Source Code Pro", "PT Mono", "DejaVu Sans Mono", 
 
 
 # ---------------------------------------------------------------
