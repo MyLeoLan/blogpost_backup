@@ -109,12 +109,12 @@ theme: next5.0.1
 ## 参考：http://www.lxway.com/240950852.htm
 #不管是github还是coding，type都填写git
 deploy:
-#- type: git
-#  repo: git@git.coding.net:leolan/blog.git,master
-#  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'  #这个是commit的说明，因为是发布站点，方便看到发布时间。
-#- type: git
-#  repo: git@github.com:MyLeoLan/blog.git,master
-#  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
+- type: git
+  repo: git@git.coding.net:leolan/blog.git,master
+  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'  #这个是commit的说明，因为是发布站点，方便看到发布时间。
+- type: git
+  repo: git@github.com:MyLeoLan/blog.git,master
+  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
 - type: git
   repo: git@git.oschina.net:leolan/blog.git,master
   message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
