@@ -19,3 +19,4 @@
 </script>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<!-- JiaThis分享按钮，不支持https -->

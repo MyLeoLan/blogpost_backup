@@ -57,7 +57,6 @@ menu_icons:   #http://fontawesome.io/icons/
 
 
 
-
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -141,6 +140,7 @@ social_icons:    #http://fontawesome.io/icons/
   Coding: github-alt
   Cloud: cloud
   OSchina: git-square
+  松松视频: video-camera
   #Twitter: twitter
   #Weibo: weibo
 
@@ -193,6 +193,7 @@ links:
   Jing's Blog: http://www.iamlj.com/
   E-Loli: https://haiwx.github.io/
   cyang's blog: http://cyang.tech/
+  卢松松: http://lusongsong.com/
   小黑: http://mblack.cn/
 
 
@@ -267,7 +268,7 @@ mathjax:
 ##  type: button
 
 # Share
-jiathis: true
+jiathis: false
 # Warning: JiaThis does not support https.
 #add_this_id:
 

@@ -150,6 +150,7 @@ social:
   Coding: https://coding.net/u/leolan
   Cloud: http://quickconnect.to/myleolan
   OSchina: https://git.oschina.net/leolan
+  松松视频: http://v.lusongsong.com/
   #Twitter: https://twitter.com/lmintlcx
   #Zhihu: http://www.zhihu.com/people/lmintlcx
   #Douban: http://www.douban.com/people/lmintlcx
@@ -171,8 +172,8 @@ wechatpay: http://ofyfogrgx.bkt.clouddn.com//pay/weixinpay.png
 #站点建立时间
 since: 2016
 
-#百度分析
-baidu_analytics: dc0e85252eeff3a87aa87f35d92a8d33
+#百度分析(可能会影响网页加载速度)
+#baidu_analytics: c91eae7f335d73f093d1499eff4b45a7
 
 #本地搜索
 search:
