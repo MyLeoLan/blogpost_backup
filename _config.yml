@@ -34,6 +34,10 @@ skip_render:
     - README.md
     - .nojekyll
     - Staticfile
+    - 'love/**'
+    - love/**
+    - 'love/*.html'
+    - love/*.html
 
 #强制包含.nojekyll文件（放在source下），这样hexo g时，.开头的文件具不会被忽略，适用于5.0以下版本的next主题（github屏蔽了一些文件夹）
 include:
@@ -115,9 +119,9 @@ deploy:
 - type: git
   repo: git@github.com:MyLeoLan/blog.git,master
   message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
-- type: git
-  repo: git@git.oschina.net:leolan/blog.git,master
-  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
+#- type: git
+#  repo: git@git.oschina.net:leolan/leolan.git,master
+#  message: 'LeoLan updated：{{now("YYYY-MM-DD HH:mm:ss")}}'
 #deploy:
 #- type: git
 #  repo:
@@ -150,7 +154,6 @@ social:
   Coding: https://coding.net/u/leolan
   Cloud: http://quickconnect.to/myleolan
   OSchina: https://git.oschina.net/leolan
-  松松视频: http://v.lusongsong.com/
   #Twitter: https://twitter.com/lmintlcx
   #Zhihu: http://www.zhihu.com/people/lmintlcx
   #Douban: http://www.douban.com/people/lmintlcx
