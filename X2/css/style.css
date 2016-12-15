@@ -900,14 +900,14 @@ display:none;
 	margin-top: 1.5em;
 }
 .bottom-footer-left p a{
-	color:#FED136;
+	color:#777;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 } 
 .bottom-footer-left p a:hover{
-	color:#777;
+	color:#ff9900;
 }
 .bottom-social-icons li a{
 	width:42px;

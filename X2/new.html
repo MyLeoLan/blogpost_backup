@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>麒麟工作室 | KylinStudio </title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	 	<!---strat-slider---->
+	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+				
+				});
+			</script>
+		<!---//strat-slider---->
+		 <!-- scroll -->
+		 <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <!-- //scroll -->
+
+
+</head>
+<body>
+	<!-- start slider -->
+<div class="slider_bg">
+			<!-- start header -->
+	<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				</div>
+		<!-- start top-nav-->
+		<div class="h_right">
+			<ul class="menu">		
+				<li><a  href="index.html">主页</a></li>
+				<li class="active"><a href="new.html">最新动态</a></li>
+			<!--	<li><a href="#portfolio" class="scroll">Portfolio</a></li>  -->
+				<li><a href="about.html">关于</a></li>
+				<li class="last"><a href="contact.html">联系我们</a></li>
+			</ul>			
+			<!-- start smart_nav * -->
+	        <nav class="nav">
+	            <ul class="nav-list">
+	                <li class="nav-item"><a  href="index.html">主页</a></li>
+	                <li class="nav-item"><a href="new.html">最新动态</a></li>
+	             <!--   <li class="nav-item"><a href="#portfolio" class="scroll">Portfolio</a> </li> -->   
+	                <li class="nav-item"><a href="about.html">关于</a></li>
+	                <li class="nav-item"><a href="contact.html">联系我们</a></li>
+	                <div class="clear"></div>
+	            </ul>
+	        </nav>
+	        <script type="text/javascript" src="js/responsive.menu.js"></script>
+			<!-- end smart_nav * -->
+		</div>
+		<div class="clear"></div>
+
+			</div>
+			</div>
+			<!--//End-header-->
+
+           <!----start-team-members---->
+				<div class="team-members">
+					<div class="wrap"> 
+				</div>
+				<!----//End-team-members----> 
+
+
+<!-- #######################以上是site文件头########################################### -->
+		  <div class="about" id="about">
+		  	<div class="wrap">
+		  		<h3>新闻</h3>
+		  		<p class="a">Proin iaculis purus consequat sem cure.</p>
+				<!---start-about-time-line---->
+				<div class="about-time-line">
+					<div class="clear"> </div>
+   		   </div>
+   		 </div>    
+   		</div>
+
+<!-- #######################以下是footer########################################### -->
+           <!----start-team-members---->
+				<div class="team-members">
+					<div class="wrap"> 
+				</div>
+				<!----//End-team-members----> 
+					
+
+
+
+         <!----start-bottom-footer---->
+				<div class="bottom-footer">
+					<div class="wrap"> 
+						<div class="bottom-footer-left">
+						<!--	<p>Copyright © 2015 - 2016 Kylin Studio. All Rights Reserved. 麒麟工作室 版权所有 · <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备16026009号-1</a></p>  -->
+						<p>&#169; Kylin Studio·麒麟工作室 2015-2016 · <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备16026009号-1</a></p>
+						</div>
+					</div>
+				</div>
+				<!----//End-bottom-footer---->
+ 
+ <!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+
+
+
+
+
