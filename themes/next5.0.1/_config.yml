@@ -138,7 +138,8 @@ social_icons:    #http://fontawesome.io/icons/
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Coding: github-alt
-  Cloud: cloud
+  Cloud1: cloud
+  Cloud2: cloud
   OSchina: git-square
   #松松视频: video-camera
   #Twitter: twitter
@@ -190,14 +191,13 @@ links_icon: heartbeat
 links:
   Jerry Locke: https://jerry.hk/
   Raintons: http://login926.top
-  Jing's Blog: http://www.iamlj.com/
-  E-Loli: https://haiwx.github.io/
-  cyang's blog: http://cyang.tech/
   DIYgod: https://www.anotherhome.net
-  卢松松的博客: http://lusongsong.com/
-  松松视频: http://v.lusongsong.com/
   小黑: http://mblack.cn/
+  Jing's Blog: http://www.iamlj.com/
+  cyang's blog: http://cyang.tech/
   一路向北: http://www.showerlee.com/
+  卢松松的博客: http://lusongsong.com/
+  松松视频: http://v.lusongsong.com/  
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
