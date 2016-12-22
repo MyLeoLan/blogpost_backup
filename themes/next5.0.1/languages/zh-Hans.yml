@@ -37,7 +37,7 @@ page:
   tags: 标签
 
 footer:
-  powered: 本站总访问量<span id="busuanzi_value_site_pv"></span>
+  powered: <a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备16026009号-2</a>  |  本站总访问量<span id="busuanzi_value_site_pv"></span>
   theme: 您是第
 #<a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备16026009号-2</a>
 

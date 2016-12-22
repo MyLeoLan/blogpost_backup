@@ -8,47 +8,7 @@ abbrlink: 26301
 date: 2016-11-29 14:04:23
 ---
 
-# 群晖系统配置设置技巧
 
-## **DMS6.0后无法用root登陆的问题**
-
-shell登陆后输入 sudo -i，可切换root账号登陆（root账号密码同admin密码）
-直接输入`chmod 7777 /etc/ssh/sshd_config`然后就可以修改这个文件了，把root登陆那一块被打上了注释符  “//”，删除即可。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/161120656.png)
-
----
-## **DMS6.0后无法用迅雷远程下载（官方不支持了）**
-安装Docker套件，搜索**xware**，安装yinheli/docker-thunder-xware；配置启动时端口什么的都不用管，设置好**挂载目录**就行了，要有**读写权限**！启动后看容器日志，
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/161802732.png)
-在迅雷远程下载官网登录账号绑定即可。
-
----
-## **虚拟机U盘启动无法挂载问题**
-虚拟机U盘启动有两种，一种是直接U盘连接进虚拟机并设置可移动磁盘启动（前提是虚拟机能正常识别到你的U盘）；另一种是对于虚拟机无法识别到U盘的情况，就只能在虚拟机中添加硬盘，在创建新硬盘时有个使用物理磁盘选项，选择它，之后选择物理磁盘时一般最后一个就是你的U盘，最后确定后能看到U盘容量；开机启动提示：![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/122419252.png)
-勾选独立，永久模式，即可解决问题。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/122615977.png)
-
----
-## 硬盘分区模式 RAID、SHR、BASIC
-SATA接口数量不多，挂的硬盘不多，但不想RAID的（RAID0不安全，RAID1太浪费，自带的SHR混合模式对数据恢复不利），建议用BASIC方式，一个新硬盘怎么也得3-5年才会出现坏道，用BASIC方式创建ext4或btrfs分区，对于更换硬盘特别方便挂载在其他系统下转移数据。组RAID0的目的在于合并容量和提升速度，一般大于2T家用级以上的的硬盘，读写速度都有100M左右，千兆网口速度也差不多，瓶颈不在硬盘上。
-**群晖双盘位机器SHR、RAID1阵列模式拆分、降级为BASIC教程**参考：
-https://www.chiphell.com/thread-1392816-1-1.html
-http://support-cn.synology.me/wordpress/?p=589
-
-官网容量计算器：[RAID 容量计算器](https://www.synology.com/zh-cn/support/RAID_calculator)
-
----
-## 硬盘数据恢复
-当系统或硬盘出现问题导致无法启动时，可以恢复数据，参考：[还原存储在 DiskStation 中的数据](https://www.synology.cn/zh-cn/knowledgebase/faq/579)
-
----
-## 群晖绑定自己的域名
-方法有很多，可以在DDNS里设置花生壳、万网账号等。
-
-[用NAT123做无公网IP的远程连接](http://post.smzdm.com/p/306444/)
-
-
----
 # 黑群晖
 一般都是黑群晖的型号都为DS3615xs(高配置)，这样才能适应不同硬件环境。在虚拟机中安装可以设置硬件，很容易洗白；一般家用都是用低配机子安装，这里主要是实体机安装。
 
@@ -98,6 +58,9 @@ http://support-cn.synology.me/wordpress/?p=589
 新的6.0设定好mac,sn,vid,pid和老的5.2系统一样的话，可以无损数据直接从5.2升级到6.0；个人不建议，有时会出现数据升天的情况。那就有的玩咯，建议全新安装。附升级教程原文：[Migrate from DSM 5.2 to 6.0 - Baremetal](http://xpenology.com/forum/viewtopic.php?f=2&t=22100)
 
 ---
+
+---
+# 配置设置技巧
 ## 洗白
 ### 修改引导U盘syslinux.cfg文件
 把U盘插入电脑，查看VID和PID
@@ -136,7 +99,7 @@ Exelc打开后启用宏，选择型号后**在空白地方双击生成SN**，记
 ---
 #### 修改SATA、eSATA
 开启DSM系统的终端登录功能，自己用shell工具连接群晖主机，账号密码是群晖系统中的用户和密码。
-用admin账户登陆，编辑`vim /etc.defaults/synoinfo.conf`文件。
+用admin账户登陆，编辑`vi /etc.defaults/synoinfo.conf`文件。
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/154631465.png)
 
 * 修改指定的SATA口为eSATA口，这样原来装有资料的硬盘就不用格式化，作为eSATA外接硬盘接入，群晖中SATA设备是不支持NTFS格式的。
@@ -148,6 +111,162 @@ Exelc打开后启用宏，选择型号后**在空白地方双击生成SN**，记
 ---
 #### 修改网络端口
 * 可以修改默认的管理端口**admin_port="5000"**；及各种端口修改，一般不建议随便修改（部分端口在DSM系统中可以修改）。
+
+---
+
+## **DMS6.0后无法用root登陆的问题**
+
+shell登陆后输入 sudo -i，可切换root账号登陆（root账号密码同admin密码）
+直接输入`chmod 7777 /etc/ssh/sshd_config`然后就可以修改这个文件了，把root登陆那一块被打上了注释符  “//”，删除即可。
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/161120656.png)
+
+---
+## **DMS6.0后无法用迅雷远程下载（官方不支持了）**
+安装Docker套件，搜索**xware**，安装yinheli/docker-thunder-xware；配置启动时端口什么的都不用管，设置好**挂载目录**就行了，要有**读写权限**！启动后看容器日志，
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/161802732.png)
+在迅雷远程下载官网登录账号绑定即可。
+
+---
+## **虚拟机U盘启动无法挂载问题**
+虚拟机U盘启动有两种，一种是直接U盘连接进虚拟机并设置可移动磁盘启动（前提是虚拟机能正常识别到你的U盘）；另一种是对于虚拟机无法识别到U盘的情况，就只能在虚拟机中添加硬盘，在创建新硬盘时有个使用物理磁盘选项，选择它，之后选择物理磁盘时一般最后一个就是你的U盘，最后确定后能看到U盘容量；开机启动提示：![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/122419252.png)
+勾选独立，永久模式，即可解决问题。
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/122615977.png)
+
+---
+## 硬盘分区模式 RAID、SHR、BASIC
+SATA接口数量不多，挂的硬盘不多，但不想RAID的（RAID0不安全，RAID1太浪费，自带的SHR混合模式对数据恢复不利），建议用BASIC方式，一个新硬盘怎么也得3-5年才会出现坏道，用BASIC方式创建ext4或btrfs分区，对于更换硬盘特别方便挂载在其他系统下转移数据。组RAID0的目的在于合并容量和提升速度，一般大于2T家用级以上的的硬盘，读写速度都有100M左右，千兆网口速度也差不多，瓶颈不在硬盘上。
+**群晖双盘位机器SHR、RAID1阵列模式拆分、降级为BASIC教程**参考：
+https://www.chiphell.com/thread-1392816-1-1.html
+http://support-cn.synology.me/wordpress/?p=589
+
+官网容量计算器：[RAID 容量计算器](https://www.synology.com/zh-cn/support/RAID_calculator)
+
+---
+## 硬盘数据恢复
+当系统或硬盘出现问题导致无法启动时，可以恢复数据，参考：[还原存储在 DiskStation 中的数据](https://www.synology.cn/zh-cn/knowledgebase/faq/579)
+
+---
+## 群晖绑定自己的域名
+方法有很多，可以在DDNS里设置花生壳、万网账号、用已备案的域名跳转到quickconnectID等等。
+
+[用NAT123做无公网IP的远程连接](http://post.smzdm.com/p/306444/)
+
+---
+## 永久屏蔽黑群晖升级或去除更新提示
+### 替换图形文件（法1）
+用WinSCP使用root权限登录到群辉。
+定位到**/usr/syno/synoman/synoSDSjslib/images**目录。
+下载文件：http://ofyfogrgx.bkt.clouddn.com/blog/20161222/105033516.zip
+替换该目录下的**dsm5_badge_num.png**和**dsm5_notification_num.png**文件
+
+---
+### 修改VERSION文件（法2）
+开启群晖系统的终端SSH功能，用任意ssh工具连接，账号密码是群晖系统的管理员账号和密码，连接进入系统sshell后；输入`su`(5.2及以下版本的系统)；`sudo -i`(6.0及以上版本的系统)后输入密码，进行提权（#号开头拥有root权限）
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/090936723.png)
+```
+cd /etc.defaults/
+vi VERSION```
+文件内容是类似下面这样子的
+进官网查参数：https://www.synology.cn/zh-cn/releaseNote/DS3615xs
+经群晖系统升级界面看看可升级的最新版本是多少？最好不要跨大版本。
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/101644792.png)
+
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/101602040.png)
+```
+majorversion="5"        #大版本号
+minorversion="2"         #小版本
+buildphase="hotfix"
+buildnumber="5967"       #细分版本号
+smallfixnumber="2"       #Update版本号，这是是DSM 5.2-5967 Update 2
+builddate="2016/07/27"   #版本时间
+buildtime="17:15:53"
+```
+`:wq`或`ZZ`保存退出vi编辑器。
+
+实际上我的是5.2_5592的，但目前5.2最新的是5.2-5967 Update 2就更改为此版本，这样就会显示为最新版本了。不要改为远大于官方的版本，比如10.1_9999之类的，会出现所有套件无法安装的情况。
+
+---
+### 一行代码搞定（法3）
+`vi /usr/syno/synoman/synoSDSjslib/sds-default.css`
+按`shift+$`跳到行尾，增加以下这行代码，同一行，不要换行。
+
+```
+.sds-application-notify-badge-num{display:none !important;}
+```
+保存退出，刷新一下网页桌面的控制面板就不会显示小角标了（所有提示都不显示小角标了，所以不建议此法），不过设置中还是会显示的。
+
+---
+## DDNS设置3322
+DSM6.0后的DDNS没[3322.org](http://www.pubyun.com/)了。
+在自定义中添加以下代码就行啦！
+```
+http://members.3322.net/dyndns/update?system=dyndns&hostname=__HOSTNAME__```
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/141001114.png)
+之后新建就嫩刚看到3322了。
+
+---
+## SVN 和 Git
+SVN的话直接安装套件，设置用户，设置仓库名就可以正常使用了。
+
+### 创建git仓库
+Git的话先安装git server套件
+进入**“控制面板”“用户账户”**，然后新增一个用户，当然也可以用现用账户（如果单独增加的是git用户，最好修改用户和用户组的权限，其他任何权限什么都没有，不能登陆，不能同步文件，不能ssh登陆等等，普通用户因为要用这些功能就不用改了），然后再git server中对应用户打钩，允许访问。群晖的用户改权限可以用图形化界面，当然也可以用命令行，参考：[自己搭建Git服务器](https://www.leolan.top/posts/41310/)
+
+接着开启群晖的ssh功能，用root或admin管理员账户登录shell。
+
+```
+cd /volume1     #硬盘挂载点一般是/volume1或者/volume2，你可以通过 ls /来查看
+mkdir git       #在硬盘中创建一个git目录，我们会把所有的git repos放在这里
+cd git
+git init --bare testgit.git         #初始化一个版本库，并创建一个testgit.git项目仓库
+chown -R leolan:users testgit.git   
+# 格式【用户名:用户组】让git用户对这个板块库目录拥有可执行的权限，否则push的时候，是没有权限写入文件的```
+服务端就OK了，接下来本地电脑克隆下来。
+```
+git clone ssh://leolan@192.168.0.58/volume1/git/testgit.git          
+# ssh://协议可能会提示某些错误，可以先不要理会，只要能克隆下来就可以了。
+#如果不克隆，可以在本地创建文件夹，绑定ssh://leolan@192.168.0.58/volume1/git/testgit.git源即可。
+#在windows上通过git客户端克隆时，要勾选克隆空项目的一个选项。
+
+cd testgit.git
+git remote -v     #查看项目的远程仓库地址
+git config --global user.name "leolan"            #绑定用户名
+git config --global user.email 842632422@qq.com   #设置邮箱
+echo "hello Git" >> hello.txt
+git add . && git commit -m "first push" && git push
+#如果正常提交不报错就可以使用啦，如果报错了再看具体内容，解决。
+```
+
+以后新建仓库时
+```
+cd /volume1/git/
+git init --bare newgit.git  #创建新的仓库并初始化（初始化会清除该项目的所有数据）
+#如果已有目录或需要重新初始化则进入目录执行：git init --bare 命令
+```
+接着克隆下来，和上面的步骤是一样的。
+
+### 免密钥登录
+```
+cat ~/.ssh/id_rsa.pub  #查看本地的ssh密钥，copy备用```
+
+```
+mkdir /volume1/homes/leolan/.ssh
+cd /volume1/homes/leolan/.ssh/
+vi authorized_keys
+#粘贴上一步copy的ssh密钥，一行一个
+chown -R leolan:users /volume1/homes/leolan/.ssh
+chmod 644 /volume1/homes/leolan/.ssh/authorized_keys
+```
+
+编辑ssh配置文件`vim /etc/ssh/sshd_config`
+```
+RSAAuthentication yes     
+PubkeyAuthentication yes     
+AuthorizedKeysFile  .ssh/authorized_keys
+```
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/171554297.png)
+然后在群晖系统中停用ssh功能，再次开启。就能免密钥操作啦！
+
 
 
 ---
