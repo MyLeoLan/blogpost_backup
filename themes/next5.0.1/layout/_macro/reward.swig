@@ -1,6 +1,6 @@
 {% if theme.alipay or theme.wechatpay %}
 <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
-  <div style="margin-bottom: 10px;font-size: 16px;font-weight: 600;">您的支持将鼓励我继续创作,非常感谢！</div>
+  <div style="margin-bottom: 10px;font-size: 16px;font-weight: 600;">想请我吃辣条吗？</div>
   <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
     <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 70px; height: 70px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
   </button>
