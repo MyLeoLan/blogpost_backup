@@ -8,7 +8,15 @@ abbrlink: 26301
 date: 2016-11-29 14:04:23
 ---
 
+# 群晖
+官网：https://www.synology.cn
+开发者专区：https://www.synology.cn/zh-cn/support/developer
+开源项目：https://sourceforge.net/u/synology/profile/
+CPU信息查询：https://www.synology.com/en-global/knowledgebase/DSM/tutorial/General/What_kind_of_CPU_does_my_NAS_have
+群晖中文论坛：https://forum.synology.com/cht/
+群晖英文论坛（内容更全面）：https://forum.synology.com/enu/index.php
 
+---
 # 黑群晖
 一般都是黑群晖的型号都为DS3615xs(高配置)，这样才能适应不同硬件环境。在虚拟机中安装可以设置硬件，很容易洗白；一般家用都是用低配机子安装，这里主要是实体机安装。
 
@@ -61,6 +69,8 @@ date: 2016-11-29 14:04:23
 
 ---
 # 配置设置技巧
+**以下软硬件配置都是本人实验过的，确实可行，偶尔经常断线，不稳定，报错等，首先检查是不是用的大天朝的长城宽带，如果是，那么恭喜你，很可能是NAT3，连DDNS都没法用，更别说其他什么服务了，鼓励你去申请IP；另外检查你的路由是不是那种多登陆几次就打不开路由管理界面的那种路由，例如K1、K2、newifi（官方固件）等换路由，果断或其他路由测试你就明白了**
+
 ## 洗白
 ### 修改引导U盘syslinux.cfg文件
 把U盘插入电脑，查看VID和PID
@@ -133,8 +143,8 @@ shell登陆后输入 sudo -i，可切换root账号登陆（root账号密码同ad
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/122615977.png)
 
 ---
-## 硬盘分区模式 RAID、SHR、BASIC
-SATA接口数量不多，挂的硬盘不多，但不想RAID的（RAID0不安全，RAID1太浪费，自带的SHR混合模式对数据恢复不利），建议用BASIC方式，一个新硬盘怎么也得3-5年才会出现坏道，用BASIC方式创建ext4或btrfs分区，对于更换硬盘特别方便挂载在其他系统下转移数据。组RAID0的目的在于合并容量和提升速度，一般大于2T家用级以上的的硬盘，读写速度都有100M左右，千兆网口速度也差不多，瓶颈不在硬盘上。
+## 硬盘分区模式 RAID、SHR、BASIC、JBOD
+SATA接口数量不多，挂的硬盘不多，但不想RAID的（RAID0不安全，RAID1太浪费，自带的SHR混合模式数据恢复麻烦一点；JBOD是类似SHR的软阵列模式，没用过，不评论），建议用BASIC方式(硬盘挂久了就知道原因了)，一个新硬盘怎么也得3-5年才会出现坏道，用BASIC方式创建ext4或btrfs分区，对于更换硬盘特别方便挂载在其他系统下转移数据。组RAID0的目的在于合并容量和提升速度，一般大于2T家用级以上的的硬盘，读写速度都有100M左右，千兆网口速度也差不多，瓶颈不在硬盘上。
 **群晖双盘位机器SHR、RAID1阵列模式拆分、降级为BASIC教程**参考：
 https://www.chiphell.com/thread-1392816-1-1.html
 http://support-cn.synology.me/wordpress/?p=589
@@ -143,7 +153,41 @@ http://support-cn.synology.me/wordpress/?p=589
 
 ---
 ## 硬盘数据恢复
-当系统或硬盘出现问题导致无法启动时，可以恢复数据，参考：[还原存储在 DiskStation 中的数据](https://www.synology.cn/zh-cn/knowledgebase/faq/579)
+当系统或硬盘出现问题导致无法启动时，可以恢复数据，当时心疼数据，折腾了2天终于找到办法了，原谅我忘记截图了。
+
+**重要：**群晖在初次安装系统时，不管有几块硬盘，则默认且必须有一块硬盘是SHR阵列，这样在之后添加的硬盘不管选用何种模式，分区都为RAID类型；恢复数据有以下**三种方法**
+
+### 克隆DSM系统分区
+这种方法对于喜欢装系统的朋友来说很好理解，群晖DSM是在每个硬盘之前分了三个分区（第一个空闲，第二个系统分区，第三个SWAP分区），之后第四个分区开始才是存储数据的，这也是为什么拔掉任何一块硬盘，系统也不会崩溃的原因（因为其他硬盘上还是有DSM系统的）。
+那么我们只要克隆系统分区就行了，注意**GPT分区格式的硬盘只能克隆到GPT分区上，MBR的也同理**，混刻是启动不了系统的，但是可以插入正常运行的DSM系统（有SHR阵列）中恢复（会自动挂载，就要要等10分钟左右）这样也比装Ubuntu恢复省了不少时间。
+
+---
+### 群晖系统内恢复
+**适用于：BASIC、SHR等等**
+随便一块能正常启动群晖的硬盘，就是SHR阵列，带有系统的那个硬盘（就是所谓的“必须有一块硬盘是SHR阵列”），没有这种硬盘可以随便找一块没有存数据的硬盘安装群晖或用别的群晖机子初始化并建立SHR阵列。
+
+完成后，用该硬盘启动群晖系统，启动后把要恢复数据的硬盘连接主机，DSM检测到硬盘显示为未初始化，不用管，就这样等上10分钟左右就会自动挂载（这时文件管理器里可以看到数据了），这时DSM是橙色报警，显示无法访问该硬盘的系统分区，只要点修复就行啦（怕丢失数据的先不要点，在文件管理器中先备份或转移资料），数据是无损的，但还是强烈建议备份（例如扇区复制）
+
+---
+### 安装Ubuntu进行恢复
+**适用于：SHR、RAID0、RAID1、JDOB等等阵列（`fdisk -l`显示有RAID字样的）**
+
+**下载Ubuntu镜像：**http://www.ubuntu.com/download/desktop
+制作U盘启动或虚拟机什么的都行，能进入系统就行，注意考虑恢复数据的速度及时间，这就决定了多长时间内要稳定运行，要是U盘启动用live模式，恢复时突然崩溃就白玩了。
+```
+sudo -i
+apt-get update
+apt-get install lvm2
+apt-get install mdadm```
+安装mdadm的时候如果是Ubuntu14的选No configuration 来完成安装。
+Ubuntu16的不会有这个选择窗口，默认就行。
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161228/111920349.png)
+安装完成后运行：`mdadm -Asf && vgchange -ay`
+可能会报错，不用管，打开文件管理器就能看到了
+
+参考：[还原存储在 DiskStation 中的数据](https://www.synology.cn/zh-cn/knowledgebase/faq/579)
+
+
 
 ---
 ## 群晖绑定自己的域名
@@ -266,6 +310,238 @@ AuthorizedKeysFile  .ssh/authorized_keys
 ```
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/171554297.png)
 然后在群晖系统中停用ssh功能，再次开启。就能免密钥操作啦！
+
+---
+## ipkg、opkg、dpkg、Entware
+ipkg、opkg、dpkg是包管理程序，类似于yum和apt-get，群晖安装后可以扩展许多功能。**Entware**可以提供Linux运行环境，严格来说可以算是一种系统，课实现Linux非常多的功能，神器！实在不懂的进[群晖英文论坛](https://forum.synology.com/enu/)能找到你想要的。
+
+### dpkg
+群晖自带了dpkg，但好像只能安装下载好的ipk文件，命令也很繁琐，没什么用处。
+
+---
+### 安装ipkg
+ipkg功能很强大，可以在线安装，但是在大天朝完全给墙了，只有Google能访问到[官网的快照](http://webcache.googleusercontent.com/search?q=cache:http://ipkg.nslu2-linux.org/feeds/optware/syno-i686/cross/unstable/)。如果无法安装可用opdk
+
+```
+sudo -i
+wget http://ipkg.nslu2-linux.org/feeds/optware/syno-i686/cross/unstable/syno-i686-bootstrap_1.2-7_i686.xsh
+chmod +x syno-i686-bootstrap_1.2-7_i686.xsh
+sh syno-i686-bootstrap_1.2-7_i686.xsh
+rm syno-i686-bootstrap_1.2-7_i686.xsh
+vi /root/.profile
+
+#在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
+/opt/bin:```
+然后保存退出，重启DSM（必须重启），重启运行`ipkg update`，之后就可以使用ipkg命令啦。
+
+---
+### 安装opdk
+```
+sudo -i
+wget http://qnapware.zyxmon.org/binaries-x86/installer/qnapware_install_x86.sh
+chmod +x qnapware_install_x86.sh
+./qnapware_install_x86.sh
+#安装完了可能会报Info:Found a Bug?，不用理。
+
+vi /etc/profile
+vi /root/.profile
+#在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
+/Apps/opt/bin:/Apps/opt/sbin:```
+然后保存退出，重启DSM（必须重启），重启运行`opkg update`，之后就可以使用opkg命令啦。
+
+---
+### Entware神器
+官方项目：https://github.com/Entware-ng/Entware-ng
+README有说明安装在各个平台的链接
+
+安装在群晖上：https://github.com/Entware-ng/Entware-ng/wiki/Install-on-Synology-NAS
+
+---
+## shadowsocks
+群晖DSM是基于Debain定制的系统，但是移除了apt包管理程序，只支持dpkg安装包，但是我们可以通过第三方软件安装插件的形式来安装说需要的软件。
+
+连接SS本来是路由上设置是比较方便的，但某些路由不支持SS，所以用群晖连接SS，再把代理地址指向群晖的地址。
+
+### pip安装SS
+**此篇未完成，结尾运行报RuntimeError: can not find library crypto错误，目前还没有找到解决方法，有知道怎么解决的朋友欢迎留言**
+
+首先通过套件中心安装python及python3
+开启SSH服务。并通过SSH连入NAS
+```
+su         #DSM5.x
+或 
+sudo -i    #DSM6.x
+
+cd /tmp​
+​wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+pip install shadowsocks
+pip install crypto
+​cd /etc/
+vi shadowsocks.json```
+内容如下：配置文件参考：[编写配置文件](www.leolan.top/posts/13905)
+```
+{ 
+"server":"远程的SS服务器地址", 
+"server_port":8388,            #远程SS服务器的服务端口
+"local_address": "127.0.0.1", 
+"local_port":1080,             #端口随意，不要冲突就行，默认1080
+"password":"mypassword",       #SS密码
+"timeout":300, 
+"method":"aes-256-cfb",        #加密方式
+"fast_open": false             #FS加速
+}```
+
+退出保存并运行服务
+```
+sslocal -c /etc/shadowsocks.json -d start```
+
+设置开机自启
+```
+vi /etc/rc
+#光标移动到最底下，在exit 0 之前添加以下这一句，保存退出。
+sslocal -c /etc/shadowsocks.json -d start```
+
+添加开机自启也可以通过计划任务添加，只是麻烦一点
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/163522654.png)
+
+---
+### Docker安装SS
+Docker安装也是可行的，直接下载安装，一定要看镜像说明，不同的作者定义的端口不同，打开看了才知道端口是什么。
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/163803852.png)
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/164015157.png)
+这里的端口是1984，运行Docker容器后，代理的端口,设置1984就OK了（当然，1984只是容器端口，真正的端口取决于你映射出来的端口）
+
+---
+### shadowsocks-libev(C语言版)
+**这节内容摘录网文，只提供思路，本人没有进行测试，有需求测试后会改写内容并删除此段文字**
+
+> 先要在 [群晖开源项目(Synology Open Source Project)](https://sourceforge.net/projects/dsgpl/files/) 找到 DS216Play 的交叉编译工具：monaco-gcc493_glibc220_hard-GPL.txz
+然后 SSH 连接 VPS 进行编译工作:
+```
+apt-get -y install make binutils
+mkdir ss
+cd ss
+wget http://iweb.dl.sourceforge.net/project/dsgpl/DSM%206.0%20Tool%20Chains/STMicroelectronics%20Monaco%20Linux%203.10.77/monaco-gcc493_glibc220_hard-GPL.txz
+tar xvf monaco-gcc493_glibc220_hard-GPL.txz
+export PATH="/root/ss/arm-unknown-linux-gnueabi/bin:$PATH"
+export CC=/root/ss/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-gcc
+export LD=/root/ss/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-ld
+export RANLIB=/root/ss/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-ranlib
+export CFLAGS="-I/root/ss/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/include"
+export LDFLAGS="-L/root/ss/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/lib"
+
+# 依赖zlib，下载编译
+wget http://zlib.net/zlib-1.2.8.tar.gz
+tar xvf zlib-1.2.8.tar.gz
+cd zlib-1.2.8/
+./configure --prefix=/root/dist/zlib-1.2.8
+make & make install
+
+# 依赖openssl，下载编译
+wget https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+tar xvf openssl-1.0.2h.tar.gz
+cd openssl-1.0.2h
+./Configure dist --prefix=/root/dist/openssl-1.0.2h
+make
+make install
+
+# 编译shadowsocks-libev
+wget https://github.com/shadowsocks/shadowsocks-libev/archive/v2.4.6.tar.gz
+tar xvf v2.4.6.tar.gz
+cd shadowsocks-libev-2.4.6
+# 配置 需要注意的是--host选项，目标NAS不同值可能也会不同
+# 详见Synology开发指南的Compile Open Source Projects章节
+./configure \
+    --with-zlib=/root/dist/zlib-1.2.8 \
+    --with-openssl=/root/dist/openssl-1.0.2h \
+    --prefix=/root/dist/ss \
+    --host=arm-unknown-linux-gnueabi
+make
+make install
+```
+这样 ss 就会编译到 /root/dist/ss 目录，这个时候打包:
+```
+tar cvf shadowsocks.tar ss/```
+登录群晖终端从远程取回文件：
+```
+scp xxx@xxx.xxx.xxx.xxx:/root/dist/shadowsocks.tar .```
+
+**运行**
+
+需要知道的是 shadowsocks 是一个 socket 代理，而群晖 NAS 只支持 HTTP 代理，所以我们需要 Privoxy软件转换下，幸运的是 ipkg 里面刚好有此软件包。
+```
+sudo ipkg install privoxy```
+新建 shadowsocks 配置文件 config.json，内容如下：
+```
+{
+ "server":"xxx.xx.xx.xx",
+ "server_port":1984,
+ "local_port":16800,
+ "password":"xxxx",
+ "method":"aes-256-cfb",
+ "timeout":60
+}```
+新建 Privoxy 配置文件 privoxy.config：
+```
+listen-address 127.0.0.1:16801  #监听本地的16801端口
+forward / .
+forward-socks5 .dropbox.com 127.0.0.1:16800 . #把访问 dropbox 的数据都通过ss 的代理端口转发出去
+forward-socks5 .tmdb.org 127.0.0.1:16800 .  #把访问 tmdb 的数据都通过ss 的代理端口转发出去
+#forward-socks5 / 127.0.0.1:16800 . #全部转发```
+
+表示监听本地 16801 的端口数据转发到本地的socks5 16800 端口。这里只有两个网站的数据经过 ss 代理，一个是 Dropbox ，另一个是 tmdb（VideoStation 封面数据抓取网址）。如果需要更多可以一个个添加进去或者使用 actionfiles。
+
+后台运行：
+```
+./ss-local -c config.json & 
+privoxy privoxy.config```
+然后进 NAS 设置一下就 OK 了：
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161228/120135818.png)
+
+---
+**自动运行**
+
+最后写一段自动运行脚本，放在 NAS 的任务计划中，设置每二十分钟运行一下，因为发现两个进程会有意外退出的情况，还没找原因：
+```
+#!/bin/sh
+echo "Please run it with source command!"
+i1=`ps -ef | grep -E "ss-local*"|grep -v grep|awk '{print $2}'`
+if (kill -9 $i1)
+then
+{
+	echo 'ss killed'
+}
+else
+{
+	echo 'no ss found!'
+}
+fi
+~/Software/ShadowSocks/bin/ss-local -c ~/Software/ShadowSocks/bin/config.json &
+echo "ss lunched!"
+
+i2=`ps -ef | grep -E "privoxy*"|grep -v grep|awk '{print $2}'`
+if (kill -9 $i2)
+then
+{
+	echo 'privoxy killed'
+}
+else
+{
+	echo 'no privoxy found!'
+}
+fi
+privoxy ~/Software/ShadowSocks/privoxy.config
+echo "privoxy lunched!"```
+
+
+
+---
+## VPN
+群晖的VPN服务是安装套件的，简单设置就行
+但是群晖连接别的VPN并不是在套件中设置的，而是在网络中设置
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/164348644.png)
+填写IP，账号密码就行，其他不知道的参数默认就行。
 
 
 
