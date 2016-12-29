@@ -153,7 +153,9 @@ http://support-cn.synology.me/wordpress/?p=589
 
 ---
 ## 硬盘数据恢复
-当系统或硬盘出现问题导致无法启动时，可以恢复数据，当时心疼数据，折腾了2天终于找到办法了，原谅我忘记截图了。
+当系统或硬盘出现问题导致无法启动时，可以恢复数据，当时心疼数据，折腾了2天终于找到办法了，原谅我忘记截图了。后来换硬盘了，补上
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161229/083143984.png)
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161229/083232912.png)
 
 **重要：**群晖在初次安装系统时，不管有几块硬盘，则默认且必须有一块硬盘是SHR阵列，这样在之后添加的硬盘不管选用何种模式，分区都为RAID类型；恢复数据有以下**三种方法**
 
@@ -313,7 +315,10 @@ AuthorizedKeysFile  .ssh/authorized_keys
 
 ---
 ## ipkg、opkg、dpkg、Entware
-ipkg、opkg、dpkg是包管理程序，类似于yum和apt-get，群晖安装后可以扩展许多功能。**Entware**可以提供Linux运行环境，严格来说可以算是一种系统，课实现Linux非常多的功能，神器！实在不懂的进[群晖英文论坛](https://forum.synology.com/enu/)能找到你想要的。
+ipkg、opkg、dpkg是包管理程序，类似于yum和apt-get，群晖安装后可以扩展许多功能。
+**Optware**运行库，opkg就是基于此。
+**Entware**本身是一个跨平台运行库，自动识别Intel、ARM平台，可以提供Linux运行环境，严格来说可以算是一种系统，可以实现Linux非常多的功能，神器！
+实在不懂的进[群晖英文论坛](https://forum.synology.com/enu/)能找到你想要的。
 
 ### dpkg
 群晖自带了dpkg，但好像只能安装下载好的ipk文件，命令也很繁琐，没什么用处。
@@ -350,11 +355,15 @@ vi /root/.profile
 然后保存退出，重启DSM（必须重启），重启运行`opkg update`，之后就可以使用opkg命令啦。
 
 ---
-### Entware神器
+### Entware-ng神器
+Entware-ng是全平台运行库
+
 官方项目：https://github.com/Entware-ng/Entware-ng
 README有说明安装在各个平台的链接
 
 安装在群晖上：https://github.com/Entware-ng/Entware-ng/wiki/Install-on-Synology-NAS
+
+安装Entware同时会安装opkg
 
 ---
 ## shadowsocks
@@ -543,6 +552,43 @@ echo "privoxy lunched!"```
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/164348644.png)
 填写IP，账号密码就行，其他不知道的参数默认就行。
 
-
+---
+## Aria2 下载神器
+### Docker安装Aria2
+直接在镜像中心搜索下载镜像运行。
+添加端口映射和目录挂载，端口默认是6800，不知道的看镜像文档。挂载目录可以把容器目录挂载到群晖的指定目录中。
 
 ---
+### 通过opkg安装Aria2
+```
+opkg update
+opkg install aria2
+
+#启动aria2
+aria2c --enable-rpc=true --rpc-listen-all=true --rpc-allow-origin-all=true --dir=/volume1/139G/aria2(这里是你的存储位置)/ --file-allocation=none -s 5 -j 3 -x 5 -c -D```
+下载Aria2管理界面：[webui-aria2](https://github.com/ziahamza/webui-aria2)
+解压后得到webui-aria2-master文件夹，改名为aria2放在web网站根目录
+然后通过：**http://群晖IP/aria2/**  访问
+然后就可以正常使用了，速度还是很快的
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161229/145417486.png)
+
+---
+**以下功能有时间再折腾，之后完善**
+
+**开机启动Aria2**
+参考：http://www.tweaking4all.com/qnap/qnap-aria2-download-manager/
+
+放弃迅雷Xware3.0 转投Aria2：http://www.nasyun.com/thread-25850-1-1.html
+迅雷离线，百度云下载，，，，，，，
+
+远程下载，远程控制，百度云导出
+若[BaiduExporter](https://github.com/acgotaku/BaiduExporter/releases)插件不行就用以下这个
+https://chrome.google.com/webstore/detail/aria2c-integration/edcakfpjaobkpdfpicldlccdffkhpbfk?hl=en-US
+
+http://www.cnplugins.com/fuzhu/baiduexporter/detail.html
+http://www.nasyun.com/forum.php?mod=viewthread&tid=26077&pid=83563&page=1&extra=
+
+---
+
+
+
