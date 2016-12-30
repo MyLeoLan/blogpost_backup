@@ -4,6 +4,11 @@ categories:
   - NAS
 tags:
   - 群晖DSM_Synology
+  - Aria2
+  - 迅雷离线
+  - opkg、ipkg、dpkg
+  - Entware
+  - shadowsocks
 abbrlink: 26301
 date: 2016-11-29 14:04:23
 ---
@@ -314,56 +319,11 @@ AuthorizedKeysFile  .ssh/authorized_keys
 然后在群晖系统中停用ssh功能，再次开启。就能免密钥操作啦！
 
 ---
-## ipkg、opkg、dpkg、Entware
-ipkg、opkg、dpkg是包管理程序，类似于yum和apt-get，群晖安装后可以扩展许多功能。
-**Optware**运行库，opkg就是基于此。
-**Entware**本身是一个跨平台运行库，自动识别Intel、ARM平台，可以提供Linux运行环境，严格来说可以算是一种系统，可以实现Linux非常多的功能，神器！
-实在不懂的进[群晖英文论坛](https://forum.synology.com/enu/)能找到你想要的。
-
-### dpkg
-群晖自带了dpkg，但好像只能安装下载好的ipk文件，命令也很繁琐，没什么用处。
-
----
-### 安装ipkg
-ipkg功能很强大，可以在线安装，但是在大天朝完全给墙了，只有Google能访问到[官网的快照](http://webcache.googleusercontent.com/search?q=cache:http://ipkg.nslu2-linux.org/feeds/optware/syno-i686/cross/unstable/)。如果无法安装可用opdk
-
-```
-sudo -i
-wget http://ipkg.nslu2-linux.org/feeds/optware/syno-i686/cross/unstable/syno-i686-bootstrap_1.2-7_i686.xsh
-chmod +x syno-i686-bootstrap_1.2-7_i686.xsh
-sh syno-i686-bootstrap_1.2-7_i686.xsh
-rm syno-i686-bootstrap_1.2-7_i686.xsh
-vi /root/.profile
-
-#在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
-/opt/bin:```
-然后保存退出，重启DSM（必须重启），重启运行`ipkg update`，之后就可以使用ipkg命令啦。
-
----
-### 安装opdk
-```
-sudo -i
-wget http://qnapware.zyxmon.org/binaries-x86/installer/qnapware_install_x86.sh
-chmod +x qnapware_install_x86.sh
-./qnapware_install_x86.sh
-#安装完了可能会报Info:Found a Bug?，不用理。
-
-vi /etc/profile
-vi /root/.profile
-#在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
-/Apps/opt/bin:/Apps/opt/sbin:```
-然后保存退出，重启DSM（必须重启），重启运行`opkg update`，之后就可以使用opkg命令啦。
-
----
-### Entware-ng神器
-Entware-ng是全平台运行库
-
-官方项目：https://github.com/Entware-ng/Entware-ng
-README有说明安装在各个平台的链接
-
-安装在群晖上：https://github.com/Entware-ng/Entware-ng/wiki/Install-on-Synology-NAS
-
-安装Entware同时会安装opkg
+## VPN
+群晖的VPN服务是安装套件的，简单设置就行
+但是群晖连接别的VPN并不是在套件中设置的，而是在网络中设置
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/164348644.png)
+填写IP，账号密码就行，其他不知道的参数默认就行。
 
 ---
 ## shadowsocks
@@ -543,14 +503,57 @@ fi
 privoxy ~/Software/ShadowSocks/privoxy.config
 echo "privoxy lunched!"```
 
+---
+## ipkg、opkg、dpkg、Entware
+ipkg、opkg、dpkg是包管理程序，类似于yum和apt-get，群晖安装后可以扩展许多功能。
+**Optware**运行库，opkg就是基于此。
+**Entware**本身是一个跨平台运行库，自动识别Intel、ARM平台，可以提供Linux运行环境，严格来说可以算是一种系统，可以实现Linux非常多的功能，神器！
+实在不懂的进[群晖英文论坛](https://forum.synology.com/enu/)能找到你想要的。
 
+### dpkg
+群晖自带了dpkg，但好像只能安装下载好的ipk文件，命令也很繁琐，没什么用处。
 
 ---
-## VPN
-群晖的VPN服务是安装套件的，简单设置就行
-但是群晖连接别的VPN并不是在套件中设置的，而是在网络中设置
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/164348644.png)
-填写IP，账号密码就行，其他不知道的参数默认就行。
+### 安装ipkg
+ipkg功能很强大，可以在线安装，但是在大天朝完全给墙了，只有Google能访问到[官网的快照](http://webcache.googleusercontent.com/search?q=cache:http://ipkg.nslu2-linux.org/feeds/optware/syno-i686/cross/unstable/)。如果无法安装可用opdk
+
+```
+sudo -i
+wget http://ipkg.nslu2-linux.org/feeds/optware/syno-i686/cross/unstable/syno-i686-bootstrap_1.2-7_i686.xsh
+chmod +x syno-i686-bootstrap_1.2-7_i686.xsh
+sh syno-i686-bootstrap_1.2-7_i686.xsh
+rm syno-i686-bootstrap_1.2-7_i686.xsh
+vi /root/.profile
+
+#在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
+/opt/bin:```
+然后保存退出，重启DSM（必须重启），重启运行`ipkg update`，之后就可以使用ipkg命令啦。
+
+---
+### 安装opdk
+```
+sudo -i
+wget http://qnapware.zyxmon.org/binaries-x86/installer/qnapware_install_x86.sh
+chmod +x qnapware_install_x86.sh
+./qnapware_install_x86.sh
+#安装完了可能会报Info:Found a Bug?，不用理。
+
+vi /etc/profile
+vi /root/.profile
+#在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
+/Apps/opt/bin:/Apps/opt/sbin:```
+然后保存退出，重启DSM（必须重启），重启运行`opkg update`，之后就可以使用opkg命令啦。
+
+---
+### Entware-ng神器
+Entware-ng是全平台运行库
+
+官方项目：https://github.com/Entware-ng/Entware-ng
+README有说明安装在各个平台的链接
+
+安装在群晖上：https://github.com/Entware-ng/Entware-ng/wiki/Install-on-Synology-NAS
+
+安装Entware同时会安装opkg
 
 ---
 ## Aria2 下载神器
@@ -572,6 +575,8 @@ aria2c --enable-rpc=true --rpc-listen-all=true --rpc-allow-origin-all=true --dir
 然后就可以正常使用了，速度还是很快的
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161229/145417486.png)
 
+Aria2配置参考：http://aria2c.com/usage.html
+
 ---
 **以下功能有时间再折腾，之后完善**
 
@@ -579,7 +584,8 @@ aria2c --enable-rpc=true --rpc-listen-all=true --rpc-allow-origin-all=true --dir
 参考：http://www.tweaking4all.com/qnap/qnap-aria2-download-manager/
 
 放弃迅雷Xware3.0 转投Aria2：http://www.nasyun.com/thread-25850-1-1.html
-迅雷离线，百度云下载，，，，，，，
+迅雷离线https://github.com/binux/ThunderLixianExporter
+，百度云下载，，，，，，，
 
 远程下载，远程控制，百度云导出
 若[BaiduExporter](https://github.com/acgotaku/BaiduExporter/releases)插件不行就用以下这个
