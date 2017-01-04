@@ -30,7 +30,8 @@ CPU信息查询：https://www.synology.com/en-global/knowledgebase/DSM/tutorial/
 黑群晖中**引导**是很重要的。
 引导有Nanoboot、gnoboot和XPEnoboot（xpenology）建议用XPEnoboot，支持的主板多，更新快。
 
-**黑群晖所需工具下载**：
+## 黑群晖所需工具下载
+
 引导下载：[xpenology](http://xpenology.me/downloads/)  
 写U盘引导工具：[win32diskimager](http://sourceforge.net/projects/win32diskimager/files/latest/download)或[Roadkil DiskImage](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/104059350.exe)
 代码编辑工具：[Notepad++](https://notepad-plus-plus.org/download/v7.2.2.html)或[sublimetext](http://www.sublimetext.com/3)
@@ -43,7 +44,10 @@ CPU信息查询：https://www.synology.com/en-global/knowledgebase/DSM/tutorial/
 5.2_5592是比较新的版本，也相对稳定一些，5.2_5644和[5.2_5967](http://source.wifihell.com/8-NAS-BUFFALO/ts5000/DSM5.2-5967/)也是可以的。
 用写U盘引导工具，把下载的img镜像文件用工具写进U盘中（U盘数据全无，做好备份），写好后重插U盘，U盘空间显示很小，其他空间被屏蔽掉了。用**Qemu启动测试器**测试一下能否启动，正常就插入主机设置U盘启动（事先没有设置好的要接显示器）。
 
+**选择机型是DS3615xs的**
 官网下载DSM系统：[DS3615xs](https://www.synology.com/zh-cn/support/download/DS3615xs)下载PAT文件。
+历史版本：http://cndl.synology.cn/download/DSM/release
+
 
 **开始安装：**
 如果局域网内只有少量待安装的机子直接浏览器输入：**http://find.synology.com** 即可直接跳转到安装界面（对于黑群晖，用的sn码如果网上有人使用了，可能看到的是别人的机子）。如果你知道机子分配的IP地址也可以输入：**http://IP:5000**
@@ -60,7 +64,10 @@ CPU信息查询：https://www.synology.com/en-global/knowledgebase/DSM/tutorial/
 
 用写U盘引导工具，把下载的img镜像文件用工具写进U盘中（U盘数据全无，做好备份），写好后重插U盘，U盘空间显示很小，其他空间被屏蔽掉了。用**Qemu启动测试器**测试一下能否启动，正常就插入主机设置U盘启动（事先没有设置好的要接显示器）。
 
+**选择机型是DS3615xs的**
 官网下载DSM系统：[DS3615xs](https://www.synology.com/zh-cn/support/download/DS3615xs)下载PAT文件。
+历史版本：http://cndl.synology.cn/download/DSM/release
+
 
 **开始安装：**
 如果局域网内只有少量待安装的机子直接浏览器输入：**http://find.synology.com** 即可直接跳转到安装界面（对于黑群晖，用的sn码如果网上有人使用了，可能看到的是别人的机子）。如果你知道机子分配的IP地址也可以输入：**http://IP:5000**
