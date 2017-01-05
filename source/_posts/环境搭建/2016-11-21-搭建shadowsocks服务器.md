@@ -122,6 +122,8 @@ shadowsocks 的日志保存在:** /var/log/shadowsocks.log**
 ---
 # 一键安装脚本
 这里提供一键安装脚本
+
+## 1.
 **Ubuntu、Debian**
 [点我直接下载脚本文件](http://ofyfogrgx.bkt.clouddn.com/blog/20161121/172019083.sh)
 
@@ -137,164 +139,34 @@ shadowsocks的配置文件位于：**/etc/shadowsocks-libev/config.json**可以�
 /etc/init.d/shadowsocks-libev stop
 /etc/init.d/shadowsocks-libev start```
 脚本已加入开机自启。
+
+---
+## 2.
+项目地址：https://github.com/shadowsocksr/shadowsocksr
+脚本下载：http://ofyfogrgx.bkt.clouddn.com/blog/20170105/095845797.sh
+
+---
+## 3.
+基于Python的SS服务器,原文：https://blog.linuxeye.com/423.html
+
 ```
-#! /bin/bash
-#===============================================================================================
-#   System Required:  Debian or Ubuntu (32bit/64bit)
-#   Description:  Install Shadowsocks(libev) for Debian or Ubuntu
-#   Author: tennfy <admin@tennfy.com>
-#   Intro:  http://www.tennfy.com
-#===============================================================================================
+wget http://ofyfogrgx.bkt.clouddn.com/blog/20170105/100514414.zip
+unzip 100514414.zip
+cd oneinstack
+./shadowsocks.sh install
 
-clear
-echo "#############################################################"
-echo "# Install Shadowsocks(libev) for Debian or Ubuntu (32bit/64bit)"
-echo "# Intro: http://www.tennfy.com"
-echo "#"
-echo "# Author: tennfy <admin@tennfy.com>"
-echo "#"
-echo "#############################################################"
-echo ""
+#Shadowsocks添加用户
+./shadowsocks.sh adduser
 
-function check_sanity {
-	# Do some sanity checking.
-	if [ $(/usr/bin/id -u) != "0" ]
-	then
-		die 'Must be run by root user'
-	fi
+#Shadowsocks卸载
+./shadowsocks.sh uninstall
 
-	if [ ! -f /etc/debian_version ]
-	then
-		die "Distribution is not supported"
-	fi
-}
-
-function die {
-	echo "ERROR: $1" > /dev/null 1>&2
-	exit 1
-}
-
-############################### install function##################################
-function install_shadowsocks_tennfy(){
-cd $HOME
-
-# install
-apt-get update
-apt-get install -y --force-yes build-essential autoconf libtool libssl-dev git curl asciidoc xmlto libpcre3 libpcre3-dev
-
-#download source code
-git clone https://github.com/madeye/shadowsocks-libev.git
-
-#compile install
-cd shadowsocks-libev
-./configure --prefix=/usr
-make && make install
-mkdir -p /etc/shadowsocks-libev
-cp ./debian/shadowsocks-libev.init /etc/init.d/shadowsocks-libev
-cp ./debian/shadowsocks-libev.default /etc/default/shadowsocks-libev
-chmod +x /etc/init.d/shadowsocks-libev
-
-# Get IP address(Default No.1)
-IP=`curl -s checkip.dyndns.com | cut -d' ' -f 6  | cut -d'<' -f 1`
-if [ -z $IP ]; then
-   IP=`curl -s ifconfig.me/ip`
-fi
-
-#config setting
-echo "#############################################################"
-echo "#"
-echo "# Please input your shadowsocks server_port and password"
-echo "#"
-echo "#############################################################"
-echo ""
-echo "input server_port(443 is suggested):"
-read serverport
-echo "input password:"
-read shadowsockspwd
-
-# Config shadowsocks
-cat > /etc/shadowsocks-libev/config.json<<-EOF
-{
-    "server":"${IP}",
-    "server_port":${serverport},
-    "local_port":1080,
-    "password":"${shadowsockspwd}",
-    "timeout":60,
-    "method":"rc4-md5"
-}
-EOF
-
-#restart
-/etc/init.d/shadowsocks-libev start
-
-#start with boot
-update-rc.d shadowsocks-libev defaults
-
-#install successfully
-    echo ""
-    echo "Congratulations, shadowsocks-libev install completed!"
-    echo -e "Your Server IP: ${IP}"
-    echo -e "Your Server Port: ${serverport}"
-    echo -e "Your Password: ${shadowsockspwd}"
-    echo -e "Your Local Port: 1080"
-    echo -e "Your Encryption Method:rc4-md5"
-}
-############################### uninstall function##################################
-function uninstall_shadowsocks_tennfy(){
-#change the dir to shadowsocks-libev
-cd $HOME
-cd shadowsocks-libev
-
-#stop shadowsocks-libev process
-/etc/init.d/shadowsocks-libev stop
-
-#uninstall shadowsocks-libev
-make uninstall
-make clean
-cd ..
-rm -rf shadowsocks-libev
-
-# delete config file
-rm -rf /etc/shadowsocks-libev
-
-# delete shadowsocks-libev init file
-rm -f /etc/init.d/shadowsocks-libev
-rm -f /etc/default/shadowsocks-libev
-
-#delete start with boot
-update-rc.d -f shadowsocks-libev remove
-
-echo "Shadowsocks-libev uninstall success!"
-
-}
-
-############################### update function##################################
-function update_shadowsocks_tennfy(){
-     uninstall_shadowsocks_tennfy
-     install_shadowsocks_tennfy
-	 echo "Shadowsocks-libev update success!"
-}
-############################### Initialization##################################
-# Make sure only root can run our script
-check_sanity
-
-action=$1
-[  -z $1 ] && action=install
-case "$action" in
-install)
-    install_shadowsocks_tennfy
-    ;;
-uninstall)
-    uninstall_shadowsocks_tennfy
-    ;;
-update)
-    update_shadowsocks_tennfy
-    ;;	
-*)
-    echo "Arguments error! [${action} ]"
-    echo "Usage: `basename $0` {install|uninstall|update}"
-    ;;
-esac```
+#Shadowsocks服务管理
+service shadowsocks start      #启动
+service shadowsocks stop      #关闭
+service shadowsocks restart   #重启
+service shadowsocks status    #状态
+```
 
 ---
 # 客户端
