@@ -21,6 +21,10 @@ CPU信息查询：https://www.synology.com/en-global/knowledgebase/DSM/tutorial/
 群晖中文论坛：https://forum.synology.com/cht/
 群晖英文论坛（内容更全面）：https://forum.synology.com/enu/index.php
 
+第三方套件地址：
+http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
+原文：http://xpenology.com/forum/viewtopic.php?f=2&t=2994
+
 ---
 # 黑群晖
 一般都是黑群晖的型号都为DS3615xs(高配置)，这样才能适应不同硬件环境。在虚拟机中安装可以设置硬件，很容易洗白；一般家用都是用低配机子安装，这里主要是实体机安装。

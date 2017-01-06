@@ -38,6 +38,7 @@ skip_render:
     - love/**
     - 'love/*.html'
     - love/*.html
+    - RAID容量计算器.html
 
 #强制包含.nojekyll文件（放在source下），这样hexo g时，.开头的文件具不会被忽略，适用于5.0以下版本的next主题（github屏蔽了一些文件夹）
 include:
@@ -105,7 +106,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next5.0.1
-#theme: next0.4
+#theme: material
 
 
 # Deployment 自动部署到仓库
