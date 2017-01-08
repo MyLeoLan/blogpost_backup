@@ -551,8 +551,8 @@ chmod +x qnapware_install_x86.sh
 
 vi /etc/profile
 vi /root/.profile
-#在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
-/Apps/opt/bin:/Apps/opt/sbin:```
+#分别在这两个文件的export CLASSPATH PATH JAVA_HOME LANG # Synology Java runtime enviroment（最后一行）的下一行加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
+PATH=$PATH:/Apps/opt/bin:/Apps/opt/sbin```
 然后保存退出，重启DSM（必须重启），重启运行`opkg update`，之后就可以使用opkg命令啦。
 
 ---
