@@ -108,7 +108,7 @@ sns_share:
 # Sidebar User Dropdown
 dropdown:
     Email Me:
-        link: "myleolan@gmail.com"
+        link: "mailto:myleolan@gmail.com"
         icon: email
 
 # Sidebar Categories Switch
