@@ -22,7 +22,7 @@ share:
     toTelegram: "分享到 Telegram"
 title:
     category: "分类"
-    tag: "标签"
+    tag: "标签云"
     about: "关于"
 misc:
     home: "主页"

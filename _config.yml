@@ -105,8 +105,8 @@ pagination_dir: page
 # Extensions 主题选择
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: next5.0.1
-theme: material
+theme: next5.0.1
+#theme: material
 
 
 # Deployment 自动部署到仓库

@@ -5,13 +5,13 @@
 # Head info
 head:
     favicon: "/img/avatar.jpg"
-    high_res_favicon: "/img/avatar.jpg"
+    high_res_favicon: "/img/200.png"
     apple_touch_icon: "/img/avatar.jpg"
     keywords:
 
 # Jump Links Settings
 url:
-    rss:
+    rss: 
     daily_pic: "#"
     logo:
 
@@ -26,7 +26,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: "Hi, 欢迎您的到来！"
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -91,7 +91,7 @@ sns:
     weibo:
     instagram:
     tumblr:
-    github:
+    github: https://github.com/myleolan
     linkedin:
     zhihu:
 
@@ -102,7 +102,7 @@ sns_share:
     googleplus: true
     weibo: true
     linkedin: false
-    qq: false
+    qq: true
     telegram: false
 
 # Sidebar User Dropdown
@@ -116,7 +116,11 @@ sidebar_categories: false
 
 # Pages Menu
 pages:
-    about: "/about"
+    分类: "/categories"
+    标签云: "/tags"
+    留言板: "/guestbook"
+    关于: "/about"
+
 
 # Qrcode for redirect at other device
 qrcode: false
@@ -129,8 +133,8 @@ qrcode: false
 # Available value:
 #     duoshuo | disqus
 comment:
-    use:
-    shortname:
+    use: disqus
+    shortname: leolan
     duoshuo_thread_key: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
 
