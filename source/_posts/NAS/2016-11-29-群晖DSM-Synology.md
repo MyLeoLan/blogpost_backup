@@ -606,6 +606,18 @@ http://www.cnplugins.com/fuzhu/baiduexporter/detail.html
 http://www.nasyun.com/forum.php?mod=viewthread&tid=26077&pid=83563&page=1&extra=
 
 ---
+## VirtualBox
+在群晖中群晖中安装此第三方套件之后就可以在群晖中运行虚拟机了。目前是还有版本范围限制，目前只支持x86以上且支持虚拟化的CPU。
+
+官网：http://spk.diablos-netzwerk.de/#showhistory_virtualbox
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20170112/110804674.png)
+
+先在设置中打开**Web Station**服务，然后在套件中心添加第三方源：http://spk.diablos-netzwerk.de
+保存刷新之后就能在套件中心看到这个插件了。
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20170112/111010324.png)
+
+![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20170112/112101700.png)
 
 
 
+---

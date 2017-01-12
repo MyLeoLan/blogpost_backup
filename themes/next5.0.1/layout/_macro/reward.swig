@@ -21,4 +21,4 @@
   </div>
 {% endif %}
 
-<h3 id="最近访客"><a href="#最近访客" class="headerlink" title="最近访客"></a>最近访客</h3><div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
+<h3 id="最近访客"><a href="#最近访客" class="headerlink" title="最近访客"></a>最近访客</h3><div class="ds-recent-visitors" data-num-items="36" data-avatar-size="42" id="ds-recent-visitors"></div>
