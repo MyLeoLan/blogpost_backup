@@ -108,7 +108,7 @@ sns_share:
 # Sidebar User Dropdown
 dropdown:
     Email Me:
-        link: "#"
+        link: "myleolan@gmail.com"
         icon: email
 
 # Sidebar Categories Switch
@@ -116,7 +116,7 @@ sidebar_categories: false
 
 # Pages Menu
 pages:
-    #about: "/about"
+    about: "/about"
 
 # Qrcode for redirect at other device
 qrcode: false
@@ -138,19 +138,19 @@ comment:
 # Available value:
 #     swiftype | google | local
 search:
-    use: google
+    use: local
     swiftype_key:
 
 # Leancloud Views
 leancloud:
     enable: false
-    app_id: #你的app_id
-    app_key: #你的app_key
+    app_id: zieuxKa4IjAP6VgxxvBe4vkj-gzGzoHsz
+    app_key: MHGN54IEuofFNV1AROiRkEoG
     av_core_mini: "https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
 
 # Busuanzi 不蒜子 Views
 busuanzi:
-    enable: false
+    enable: true
     all_site_uv: false
-    post_pv: false
+    post_pv: true
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"

@@ -23,6 +23,7 @@ share:
 title:
     category: "分类"
     tag: "标签"
+    about: "关于"
 misc:
     home: "主页"
     theme: "主题"
