@@ -107,7 +107,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next5.0.1
 #theme: material
-
+#theme: next_new
 
 # Deployment 自动部署到仓库
 ## 官方文档Docs: https://hexo.io/docs/deployment.html   有部署到各种服务器的方法
@@ -155,7 +155,7 @@ social:
   Coding: https://coding.net/u/leolan
   Cloud1: http://quickconnect.to/myleolan
   OSchina: https://git.oschina.net/leolan
-  Cloud2: http://842632422-abc.eicp.net
+  Cloud2: http://leolan.picp.net
   Links: https://www.leolan.top/posts/44568/
   #Twitter: https://twitter.com/lmintlcx
   #Zhihu: http://www.zhihu.com/people/lmintlcx

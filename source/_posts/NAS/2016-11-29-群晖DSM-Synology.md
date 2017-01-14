@@ -36,11 +36,12 @@ http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 
 ## 黑群晖所需工具下载
 
-引导下载：[xpenology](http://xpenology.me/downloads/)  
-写U盘引导工具：[win32diskimager](http://sourceforge.net/projects/win32diskimager/files/latest/download)或[Roadkil DiskImage](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/104059350.exe)
-代码编辑工具：[Notepad++](https://notepad-plus-plus.org/download/v7.2.2.html)或[sublimetext](http://www.sublimetext.com/3)
-启动测试：[Qemu启动测试器](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/105826397.exe)
+**引导下载**：[xpenology](http://xpenology.me/downloads/)　　[nanoboot](http://nanoboot.eu.org/)
+**写U盘引导工具**：[win32diskimager](http://sourceforge.net/projects/win32diskimager/files/latest/download)或[Roadkil DiskImage](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/104059350.exe)或[USBImageTool_v1.66汉化版](http://ofyfogrgx.bkt.clouddn.com/blog/20170114/120704544.zip)
+**代码编辑工具**：[Notepad++](https://notepad-plus-plus.org/download/v7.2.2.html)或[sublimetext](http://www.sublimetext.com/3)
+**启动测试**：[Qemu启动测试器](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/105826397.exe)
 
+虚拟机可能会用到的镜像转换工具，img-虚拟磁盘格式互转：[StarWind Converter](http://ofyfogrgx.bkt.clouddn.com/blog/20170114/120751140.zip)
 
 ---
 ## 黑群晖DSM_5.2
