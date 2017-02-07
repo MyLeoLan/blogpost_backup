@@ -265,7 +265,7 @@ DSM6.0后的DDNS没[3322.org](http://www.pubyun.com/)了。
 ```
 http://members.3322.net/dyndns/update?system=dyndns&hostname=__HOSTNAME__```
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/141001114.png)
-之后新建就嫩刚看到3322了。
+之后新建就能看到3322了。
 
 ---
 ## SVN 和 Git

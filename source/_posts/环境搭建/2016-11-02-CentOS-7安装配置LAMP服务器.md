@@ -40,7 +40,8 @@ vim /etc/selinux/config
 #SELINUXTYPE=targeted #注释掉
 SELINUX=disabled #增加```
 :wq! #保存退出
-`setenforce 0` #使配置立即生效
+`setenforce 0` 使配置立即生效
+
 ---
 ## 安装篇：
 一、安装MariaDB
@@ -72,8 +73,7 @@ systemctl enable httpd #设置apache开机启动```
 在客户端浏览器中打开服务器IP地址，会出现测试界面，说明apache安装成功
 
 ---
-
-## 配置篇:
+## 配置篇
 ### 一、Apache配置
 `vim /etc/httpd/conf/httpd.conf` 编辑配置文件
 
