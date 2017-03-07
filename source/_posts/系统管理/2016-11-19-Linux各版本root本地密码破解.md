@@ -14,10 +14,13 @@ date: 2016-11-19 01:09:09
 ---
 # RedHat/CentOS/Fedora
 　　1.在grub选项菜单**按E**进入编辑模式
-　　2.编辑kernel **那行最后加上S **(或者Single)
+　　2.编辑kernel **那行最后空一格加上S **(或者Single)然后回车
 　　3.按B，启动到**single-user mode**模式
 　　4.进入后执行下列命令
 ```
+passwd
+reboot
+或
 mount -t proc proc /proc
 mount -o remount,rw /
 passwd
