@@ -67,6 +67,7 @@
             </a>
 
 <!-- 自定义High一下的功能 -->
+
  <a rel="alternate" class="mw-harlem_shake_slow wobble shake" href='javascript:(
    function go() {
    var songs = [
@@ -74,8 +75,6 @@
                "http://ofyfogrgx.bkt.clouddn.com/Music-sunburst.mp3",
                "http://ofyfogrgx.bkt.clouddn.com//blog/Apple%20&%20Stone%20-%20Lost.mp3"
    ];
-
-<!--"http://ofyfogrgx.bkt.clouddn.com/blog/20161115/150103346.mp3","http://ofyfogrgx.bkt.clouddn.com/blog/20161115/150842689.mp3",-->
 
    function c() {
        var e = document.createElement("link");
@@ -208,10 +207,11 @@
    var o = "im_first";
    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
    var a = "mw-strobe_light";
+   var f = "//7xncbk.com1.z0.glb.clouddn.com/harlem-shake-style.css";
    /* harlem-shake-style.css，替换成你的位置，也可以直接使用：//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css
-   //7xncbk.com1.z0.glb.clouddn.com/harlem-shake-style.css  七牛云地址*/
-   var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";  
-   /* var f = "/css/harlem_shake_style.css";  */
+   //7xncbk.com1.z0.glb.clouddn.com/harlem-shake-style.css  七牛云地址
+   var f = "/css/harlem_shake_style.css"; */
+   
 
    var l = "mw_added_css";
    var b = g();
@@ -243,7 +243,9 @@
    })()'><i class="menu-item-icon fa fa-music fa-fw"></i>High</a>
 </div>
          <!-- end High一下 -->
-        {% endif %}
+
+        {% endif %}  
+
 
         <div class="links-of-author motion-element">
           {% if theme.social %}
