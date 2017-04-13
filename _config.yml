@@ -133,7 +133,7 @@ deploy:
 
 
 # Disqus #Disqus评论系统
-disqus_shortname: leolan
+disqus_shortname: myleolan
 
 
 #plugins: #插件，例如生成 RSS 和站点地图的
