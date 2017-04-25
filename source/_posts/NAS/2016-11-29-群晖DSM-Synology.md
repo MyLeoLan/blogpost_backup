@@ -85,6 +85,8 @@ http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 ---
 ## 黑群晖DSM_6.1
 引导下载：[DS3615xs 6.1 Jun's Mod V1.02-alpha](http://ofyfogrgx.bkt.clouddn.com/DS3615xs%206.1%20Jun%27s%20Mod%20V1.02-alpha.zip)
+系统下载：[DSM_DS3615xs_15047](http://cndl.synology.cn/download/DSM/release/6.1/15047/DSM_DS3615xs_15047.pat)
+
 操作和6.0是完全一样的，注意不管是虚拟机还是真机，硬盘要选SATA，不然是识别不了的。如果是VBox,需要同时开启两张网卡（都用桥接模式），第二张网卡才能通过路由获得IP。这是VBox一点点小问题。遇到无法导入的虚拟机直接复制**synoboot.img，synoboot.vmdk**这两个启动文件添加磁盘就行了。
 
 **注意：**全新安装是完全没有问题的，但是从6.0升级到6.1会有各种各样的问题，也可能导致数据丢失，建议全新安装；以下提供一种网传的方法，据说是不损数据。
@@ -629,6 +631,13 @@ http://www.nasyun.com/forum.php?mod=viewthread&tid=26077&pid=83563&page=1&extra=
 
 ![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20170112/112101700.png)
 
+
+---
+## KVM
+
+
+---
+## 软路由
 
 
 ---
