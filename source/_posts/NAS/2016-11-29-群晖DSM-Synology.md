@@ -84,6 +84,7 @@ http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 
 ---
 ## 黑群晖DSM_6.1
+这次的6.1依然是大神Jun's发布的，简单方便。
 引导下载：[DS3615xs 6.1 Jun's Mod V1.02-alpha](http://ofyfogrgx.bkt.clouddn.com/DS3615xs%206.1%20Jun%27s%20Mod%20V1.02-alpha.zip)
 系统下载：[DSM_DS3615xs_15047](http://cndl.synology.cn/download/DSM/release/6.1/15047/DSM_DS3615xs_15047.pat)
 
@@ -634,10 +635,33 @@ http://www.nasyun.com/forum.php?mod=viewthread&tid=26077&pid=83563&page=1&extra=
 
 ---
 ## KVM
+不管是黑群晖还是白群晖，CPU基本上都是支持虚拟化的，所以也可以在群晖DSM中安装KVM
 
+### 安装
+1，下载套件:https://github.com/bsdcpp/synoKVM
+黑裙一般是bromolow；我的DS216+II是braswell平台，进入该目录下载qemu和libvirt两个spk安装包。
+要知道自己机器平台参考：https://github.com/SynoCommunity/spksrc/wiki/Architecture-per-Synology-model
+
+在套件中心设置
+![mark](http://ofyfogrgx.bkt.clouddn.com/image/20170426/124313634.png)
+群晖<font color=#0080ff>控制面板–>网络–>网络界面–>管理–>Open vSwitch设置</font>，启用Open vSwitch。
+![mark](http://ofyfogrgx.bkt.clouddn.com/image/20170426/125710448.png)
+
+然后手动安装这两个套件。
+
+### 管理
+可以打开群晖的shell用virsh命令行来管理；也可以在Linux中安装virt-manager，运行：`virt-manager`命令（连的时候选择tcp方式）图形化管理。
+
+参考：
+群晖（Synology）KVM虚拟机教程：https://blog.oldghost.net/synology-nas-kvm-turtorial.html
+用docker来搭建virt-manager：https://blog.oldghost.net/synology-ssh-and-virt-manager-setup-in-docker.html
+没图形界面的Linux机器安装virt-manager后在Windows下用putty和xming连接virt-manager主机：http://www.zw1840.com/blog/zw1840/2008/10/putty-xming-linux-gui.html
+ubuntu中virt-manager图形化管理：http://www.ilanni.com/?p=6101
+
+virtio驱动下载：https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 
 ---
 ## 软路由
-
+http://koolshare.cn/thread-76860-1-2.html
 
 ---
