@@ -19,26 +19,31 @@ CentOS 7默认使用的是firewall作为防火墙，这里改为iptables防火�
 #### 1、关闭firewall：
 ```
 systemctl stop firewalld.service #停止firewall
-systemctl disable firewalld.service #禁止firewall开机启动```
+systemctl disable firewalld.service #禁止firewall开机启动
+```
 #### 2、安装iptables防火墙
 ```
 yum install iptables-services #安装
-vim /etc/sysconfig/iptables #编辑防火墙配置文件```
+vim /etc/sysconfig/iptables #编辑防火墙配置文件
+```
 增加规则：
 ```
 -A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
 -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
--A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT```
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT
+```
 :wq! #保存退出
 ```
 systemctl restart iptables #最后重启防火墙使配置生效
-systemctl enable iptables #设置防火墙开机启动```
+systemctl enable iptables #设置防火墙开机启动
+```
 ### 二、关闭SELINUX
 ```
 vim /etc/selinux/config
 #SELINUX=enforcing #注释掉
 #SELINUXTYPE=targeted #注释掉
-SELINUX=disabled #增加```
+SELINUX=disabled #增加
+```
 :wq! #保存退出
 `setenforce 0` 使配置立即生效
 
@@ -49,7 +54,8 @@ CentOS 7.0中，已经使用MariaDB替代了MySQL数据库
 #### 1、安装MariaDB
 ```
 yum install mariadb mariadb-server -y
-systemctl start mariadb #启动MariaDB```
+systemctl start mariadb #启动MariaDB
+```
 
 `cp /usr/share/mysql/my-huge.cnf /etc/my.cnf` 拷贝配置文件（注意：如果/etc目录下面默认有一个my.cnf，直接覆盖即可）
 #### 2、为root账户设置密码
@@ -68,7 +74,8 @@ yum install http php php-mysql php-gd libjpeg* php-ldap php-odbc php-pear php-xm
 systemctl restart mariadb  #重启MariaDB
 systemctl enable mariadb #设置开机启动
 systemctl start httpd #启动apache
-systemctl enable httpd #设置apache开机启动```
+systemctl enable httpd #设置apache开机启动
+```
 
 在客户端浏览器中打开服务器IP地址，会出现测试界面，说明apache安装成功
 
@@ -110,8 +117,10 @@ disable_functions = passthru,exec,system,chroot,scandir,chgrp,chown,shell_exec,p
 systemctl restart mariadb #重启MariaDB
 systemctl restart httpd #重启apache```
 测试篇
-```cd /var/www/html
-vim index.php #输入下面内容```
+```
+cd /var/www/html
+vim index.php #输入下面内容
+```
 ```php
 <?php
 phpinfo();
@@ -126,3 +135,4 @@ phpinfo();
 参考：http://www.osyunwei.com/archives/7829.html
 
 ---
+

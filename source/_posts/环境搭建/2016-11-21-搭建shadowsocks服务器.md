@@ -30,25 +30,30 @@ bandwagon（搬瓦工）
 ### Debian/Ubuntu:
 ```
 apt-get install python-pip
-pip install shadowsocks ```
+pip install shadowsocks 
+```
 如果遇到第一个命令安装 python-pip 时找不到包的情况。pip 官方给出了一个安装脚本，可以自动安装 pip。先下载脚本，然后执行即可：
 ```
-wget https://bootstrap.pypa.io/get-pip.py python get-pip.py ```
+wget https://bootstrap.pypa.io/get-pip.py python get-pip.py 
+```
 
 ### CentOS
 ```
 yum install python-setuptools && easy_install pip
-pip install shadowsocks ```
+pip install shadowsocks 
+```
 
 ### 源码编译
 ```
-git clone https://github.com/madeye/shadowsocks-libev.git```
+git clone https://github.com/madeye/shadowsocks-libev.git
+```
 
 进入目录编译安装
 ```
 cd shadowsocks-libev
 ./configure --prefix=/usr
-make && make install```
+make && make install
+```
 
 配置服务及配置文件
 ```
@@ -56,7 +61,8 @@ mkdir -p /etc/shadowsocks-libev
 cp ./debian/shadowsocks-libev.init /etc/init.d/shadowsocks-libev
 cp ./debian/shadowsocks-libev.default /etc/default/shadowsocks-libev
 cp ./debian/config.json /etc/shadowsocks-libev/config.json
-chmod +x /etc/init.d/shadowsocks-libev```
+chmod +x /etc/init.d/shadowsocks-libev
+```
 
 配置shadowsocks配置文件
 `vi /etc/shadowsocks-libev/config.json`
@@ -68,12 +74,14 @@ chmod +x /etc/init.d/shadowsocks-libev```
           "password":"barfoo!", #认证密码
           "timeout":60,
           "method":"aes-256-cfb" #加密方式，推荐使用aes-256-cfb
-}```
+}
+```
 
 重启shadowsocks服务。
 ```
 /etc/init.d/shadowsocks-libev stop
-/etc/init.d/shadowsocks-libev start```
+/etc/init.d/shadowsocks-libev start
+```
 
 
 
@@ -109,14 +117,16 @@ shadowsocks 启动时的参数，如服务器端口，代理端口，登录密�
 "method":"rc4-md5",
 "fast_open":false,
 "workers":1
-}```
+}
+```
 
 ## 启动 shadowsocks
 启动 shadowsocks 服务器的命令如下：
 ```
 ssserver -c /etc/shadowsocks.json           #启动服务
 ssserver -c /etc/shadowsocks.json -d start  #后台启动服务
-ssserver -c /etc/shadowsocks.json -d stop   #停止服务```
+ssserver -c /etc/shadowsocks.json -d stop   #停止服务
+```
 
 shadowsocks 的日志保存在:** /var/log/shadowsocks.log**
 ---
@@ -137,7 +147,8 @@ password自定
 shadowsocks的配置文件位于：**/etc/shadowsocks-libev/config.json**可以编辑该文件从而修改密码、服务器端口及加密方式，修改之后记得保存重启。
 ```
 /etc/init.d/shadowsocks-libev stop
-/etc/init.d/shadowsocks-libev start```
+/etc/init.d/shadowsocks-libev start
+```
 脚本已加入开机自启。
 
 ---
@@ -225,3 +236,5 @@ https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
 在 switchyOmega 选项的左侧点击 “导入 / 导出”，点击“生成备份文件” 即可生成 switchyOmega 设置备份。点击 “从备份文件恢复” 可以导入备份
 
 ---
+
+
