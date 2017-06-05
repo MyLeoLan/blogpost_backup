@@ -21,6 +21,10 @@ CPU信息查询：https://www.synology.com/en-global/knowledgebase/DSM/tutorial/
 群晖中文论坛：https://forum.synology.com/cht/
 群晖英文论坛（内容更全面）：https://forum.synology.com/enu/index.php
 
+
+<!--more-->
+
+
 第三方套件地址：
 http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 原文：http://xpenology.com/forum/viewtopic.php?f=2&t=2994
@@ -37,11 +41,11 @@ http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 ## 黑群晖所需工具下载
 
 **引导下载**：[xpenology](http://xpenology.me/downloads/)　　[nanoboot](http://nanoboot.eu.org/)
-**写U盘引导工具**：[win32diskimager](http://sourceforge.net/projects/win32diskimager/files/latest/download)或[Roadkil DiskImage](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/104059350.exe)或[USBImageTool_v1.66汉化版](http://ofyfogrgx.bkt.clouddn.com/blog/20170114/120704544.zip)
+**写U盘引导工具**：[win32diskimager](http://sourceforge.net/projects/win32diskimager/files/latest/download)或[Roadkil DiskImage](https://image.leolan.top/blog/20161202/104059350.exe)或[USBImageTool_v1.66汉化版](https://image.leolan.top/blog/20170114/120704544.zip)
 **代码编辑工具**：[Notepad++](https://notepad-plus-plus.org/download/v7.2.2.html)或[sublimetext](http://www.sublimetext.com/3)
-**启动测试**：[Qemu启动测试器](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/105826397.exe)
+**启动测试**：[Qemu启动测试器](https://image.leolan.top/blog/20161202/105826397.exe)
 
-虚拟机可能会用到的镜像转换工具，img-虚拟磁盘格式互转：[StarWind Converter](http://ofyfogrgx.bkt.clouddn.com/blog/20170114/120751140.zip)
+虚拟机可能会用到的镜像转换工具，img-虚拟磁盘格式互转：[StarWind Converter](https://image.leolan.top/blog/20170114/120751140.zip)
 
 ---
 ## 黑群晖DSM_5.2
@@ -64,7 +68,7 @@ http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 
 ---
 ## 黑群晖DSM_6.0
-引导下载：[DS3615xs 6.0.2 Jun's Mod V1.01](http://ofyfogrgx.bkt.clouddn.com/DS3615xs%206.0.2%20Jun%27s%20Mod%20V1.01.zip)或[Jun's的网盘](http://source.wifihell.com/8-NAS-BUFFALO/ts5000/DSM6.02-v1.01/)
+引导下载：[DS3615xs 6.0.2 Jun's Mod V1.01](https://image.leolan.top/DS3615xs%206.0.2%20Jun%27s%20Mod%20V1.01.zip)或[Jun's的网盘](http://source.wifihell.com/8-NAS-BUFFALO/ts5000/DSM6.02-v1.01/)
 此压缩文件包含了img引导文件和VMware虚拟机配置文件（支持6.0.2_8451），虚拟机配置文件点开即可使用（自己设置网卡桥接并添加硬盘（设置为SATA接口），硬盘空间小于5G无法安装）。img镜像刻录到U盘后是**GPT+BIOS/UEFI**格式的分区，太老的主板可能无法识别到分区。VBox,需要同时开启两张网卡（都用桥接模式），第二张网卡才能通过路由获得IP。这是VBox一点点小问题。
 
 <font color=#FF0000>DSM6.0以上的黑群晖，引导分区和以前不一样，在制作镜像之后，洗白时不能直接给ESP分区分配盘符，这样修改之后的启动盘是无法启动的，最好用DiskGenius直接浏览文件，把gurb.cfg文件拷贝到电脑上，修改后直接拖回去替换掉</font>
@@ -87,7 +91,7 @@ http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 ---
 ## 黑群晖DSM_6.1
 这次的6.1依然是大神Jun's发布的，简单方便。
-引导下载：[DS3615xs 6.1 Jun's Mod V1.02-alpha](http://ofyfogrgx.bkt.clouddn.com/DS3615xs%206.1%20Jun%27s%20Mod%20V1.02-alpha.zip)
+引导下载：[DS3615xs 6.1 Jun's Mod V1.02-alpha](https://image.leolan.top/DS3615xs%206.1%20Jun%27s%20Mod%20V1.02-alpha.zip)
 系统下载：[DSM_DS3615xs_15047](http://cndl.synology.cn/download/DSM/release/6.1/15047/DSM_DS3615xs_15047.pat)
 
 操作和6.0是完全一样的，注意不管是虚拟机还是真机，硬盘要选SATA，不然是识别不了的。如果是VBox,需要同时开启两张网卡（都用桥接模式），第二张网卡才能通过路由获得IP。这是VBox一点点小问题。遇到无法导入的虚拟机直接复制**synoboot.img，synoboot.vmdk**这两个启动文件添加磁盘就行了。
@@ -100,33 +104,45 @@ http://www.gebi1.com/thread-84115-1-1.html?_dsign=b839635c
 * 3，格式化硬盘前的那个2.4G左右的Linux分区（注意，不是删掉，或者新建，不要破坏现在的分区表，只是单纯格式化那个分区为ntfs,fat之类的格式，目的是破坏群晖的系统文件）
 * 4，插入6.1启动盘启动，会提示数据损毁，迁移安装什么的，然后安装就行了，数据是无损的。但还是强烈建议大家备份。
 
+---
+## 安装失败
+## 我们检测到硬盘（3, 4）中有错误，因此 SATA 端口已被禁用。（硬盘3，4是变量）
+某些新机子，服务器等，如Dell PC等，坑你会出现在安装失败，报错：“**我们检测到硬盘（3, 4）中有错误，因此 SATA 端口已被禁用。请关闭 DS3615xs 以替换或卸下硬盘并重试。**”
+
+法1：如果是用find.synology.com 联机的，改用群晖助手（右键安装系统）去安装就行了。
+法2：第一次u盘启动时启动菜单选择强制安装force install即可安装
+
+## 机器在升级过程中，不管是在线升级，还是手动上传pat档，均提示pat损毁，升级失败。
+
+后来修改SataPortMap=1 这里 改成SataPortMap=2，更新成功。如果有朋友出现同样的问题，可以尝试修改看看。
+这是在另一个坛子里查到的：“SataPortMap=x ”，我也是试了好几次后，才发现的，还要往主板厂商去核实主板原生的SATA口的个数，也就是 x 的值，我查了我的主板是2，所以建议根据实际情况测试
 
 ---
 # 配置设置技巧
-**以下软硬件配置都是本人实验过的，确实可行，偶尔经常断线，不稳定，报错等，首先检查是不是用的大天朝的长城宽带，如果是，那么恭喜你，很可能是NAT3，连DDNS都没法用，更别说其他什么服务了，鼓励你去申请IP；另外检查你的路由是不是那种多登陆几次就打不开路由管理界面的那种路由，例如K1、K2、newifi（官方固件）等换路由，果断或其他路由测试你就明白了**
+**以下软硬件配置都是本人实验过的，确实可行，偶尔经常断线，不稳定，报错等，首先检查是不是用的大天朝的长城宽带，如果是，那么恭喜你，连DDNS都没法用，更别说其他什么服务了，鼓励你去申请IP；另外检查你的路由是不是那种多登陆几次就打不开路由管理界面的那种路由，例如K1、K2、newifi（官方固件）等换路由，果断或其他路由测试你就明白了**
 
 ## 洗白
 ### 修改引导U盘syslinux.cfg文件
 把U盘插入电脑，查看VID和PID
 **linux**：命令行输入`lsusb`
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/151859616.png)
+![mark](https://image.leolan.top/blog/20161129/151859616.png)
 
 **mac**：终端输入`system_profiler SPUSBDataType`
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/152000090.png)
+![mark](https://image.leolan.top/blog/20161129/152000090.png)
 
 **windows**:在设备管理器的属性中，或用什么芯片无忧、芯片精灵等工具都可以看得到。
 
 **SN生成并计算Mac**
 1.[群晖所有型号官方SN和MAC生成器(在线版，需翻墙)](https://onedrive.live.com/view.aspx?resid=AFD1164BAADDF81C!168&ithint=file%2cxlsm&app=Excel&authkey=!AAQuOGpVwRe7bu8)
-2.[群晖所有型号官方SN和MAC生成器下载](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/110736454.xlsm)
-Exelc打开后启用宏，选择型号后**在空白地方双击生成SN**，记录下来，底部选项卡选择Mac**已经计算出对应了SN的Mac**了，也记录下来备用。
+2.[群晖所有型号官方SN和MAC生成器下载](https://image.leolan.top/blog/20161202/110736454.xlsm)
+Exelc打开后启用宏，选择型号后**在表格的其它地方随便双击然后再单击表格某处，就会生成新SN**，记录下来，底部选项卡选择Mac**已经计算出对应了SN的Mac**了，也记录下来备用。
 
 
 在U盘根目录下有个**syslinux.cfg**文件（如果是6.0版本则修改grub下的**grub.cfg**文件），修改该文件的sn、vid、pid、mac的值，三处都要修改,mac1在群晖硬件版本DS3615xs之后，在sn前面，如果多网卡再加上mac2...别忘了空格是整行的没有换行，是编辑器显示区域不够了。
 类似于这样：
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/111813709.png)
+![mark](https://image.leolan.top/blog/20161202/111813709.png)
 改好后插回机子中启动系统，顺利的话在DSM中看不到此U盘外接设备了，在群晖助手中的MAC和序列号也是对应设定的，这时**Quickconnect ID**已经可以正常使用了。
-![](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/120106459.png)
+![](https://image.leolan.top/blog/20161202/120106459.png)
 
 6.0.x系统在升级过程中，不管是在线升级，还是手动上传pat档，均提示pat损毁，升级失败的问题。修改U盘**grub.cfg**文件中**SataPortMap=x**的值（这是指主板原生SATA接口数，主板固件总线中已经定义了，而不是通过外设方式集成的），默认为1 改成**SataPortMap=2**试试。可以搜索主板厂商去核实主板原生的SATA口的个数，也就是 x 的值，自己对应更改，错误的值可能启动不了系统的。
 
@@ -144,11 +160,11 @@ Exelc打开后启用宏，选择型号后**在空白地方双击生成SN**，记
 #### 修改SATA、eSATA
 开启DSM系统的终端登录功能，自己用shell工具连接群晖主机，账号密码是群晖系统中的用户和密码。
 用admin账户登陆，编辑`vi /etc.defaults/synoinfo.conf`文件。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/154631465.png)
+![mark](https://image.leolan.top/blog/20161129/154631465.png)
 
 * 修改指定的SATA口为eSATA口，这样原来装有资料的硬盘就不用格式化，作为eSATA外接硬盘接入，群晖中SATA设备是不支持NTFS格式的。
 修改**esataportcfg**和**internalportcfg**对应的16进制的值，**esataportcfg**值不够位数就写最后三位；**internalportcfg**值要写全。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/154246686.PNG)
+![mark](https://image.leolan.top/blog/20161129/154246686.PNG)
 1-12代表1-12号SATA接口，用作群晖系统盘的那个接口必须是SATA接口，必须由群晖系统来初始化硬盘（数据提前做好备份）
 参考：http://www.7po.com/thread-456016-1-1.html
 
@@ -162,19 +178,19 @@ Exelc打开后启用宏，选择型号后**在空白地方双击生成SN**，记
 
 shell登陆后输入 sudo -i，可切换root账号登陆（root账号密码同admin密码）
 直接输入`chmod 7777 /etc/ssh/sshd_config`然后就可以修改这个文件了，把root登陆那一块被打上了注释符  “//”，删除即可。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/161120656.png)
+![mark](https://image.leolan.top/blog/20161129/161120656.png)
 
 ---
 ## **DMS6.0后无法用迅雷远程下载（官方不支持了）**
 安装Docker套件，搜索**xware**，安装yinheli/docker-thunder-xware；配置启动时端口什么的都不用管，设置好**挂载目录**就行了，要有**读写权限**！启动后看容器日志，
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161129/161802732.png)
+![mark](https://image.leolan.top/blog/20161129/161802732.png)
 在迅雷远程下载官网登录账号绑定即可。
 
 ---
 ## **虚拟机U盘启动无法挂载问题**
-虚拟机U盘启动有两种，一种是直接U盘连接进虚拟机并设置可移动磁盘启动（前提是虚拟机能正常识别到你的U盘）；另一种是对于虚拟机无法识别到U盘的情况，就只能在虚拟机中添加硬盘，在创建新硬盘时有个使用物理磁盘选项，选择它，之后选择物理磁盘时一般最后一个就是你的U盘，最后确定后能看到U盘容量；开机启动提示：![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/122419252.png)
+虚拟机U盘启动有两种，一种是直接U盘连接进虚拟机并设置可移动磁盘启动（前提是虚拟机能正常识别到你的U盘）；另一种是对于虚拟机无法识别到U盘的情况，就只能在虚拟机中添加硬盘，在创建新硬盘时有个使用物理磁盘选项，选择它，之后选择物理磁盘时一般最后一个就是你的U盘，最后确定后能看到U盘容量；开机启动提示：![mark](https://image.leolan.top/blog/20161202/122419252.png)
 勾选独立，永久模式，即可解决问题。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161202/122615977.png)
+![mark](https://image.leolan.top/blog/20161202/122615977.png)
 
 ---
 ## 硬盘分区模式 RAID、SHR、BASIC、JBOD
@@ -188,8 +204,8 @@ http://support-cn.synology.me/wordpress/?p=589
 ---
 ## 硬盘数据恢复
 当系统或硬盘出现问题导致无法启动时，可以恢复数据，当时心疼数据，折腾了2天终于找到办法了，原谅我忘记截图了。后来换硬盘了，补上
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161229/083143984.png)
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161229/083232912.png)
+![mark](https://image.leolan.top/blog/20161229/083143984.png)
+![mark](https://image.leolan.top/blog/20161229/083232912.png)
 
 **重要：**群晖在初次安装系统时，不管有几块硬盘，则默认且必须有一块硬盘是SHR阵列，这样在之后添加的硬盘不管选用何种模式，分区都为RAID类型；恢复数据有以下**三种方法**
 
@@ -214,10 +230,11 @@ http://support-cn.synology.me/wordpress/?p=589
 sudo -i
 apt-get update
 apt-get install lvm2
-apt-get install mdadm```
+apt-get install mdadm
+```
 安装mdadm的时候如果是Ubuntu14的选No configuration 来完成安装。
 Ubuntu16的不会有这个选择窗口，默认就行。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161228/111920349.png)
+![mark](https://image.leolan.top/blog/20161228/111920349.png)
 安装完成后运行：`mdadm -Asf && vgchange -ay`
 可能会报错，不用管，打开文件管理器就能看到了
 
@@ -236,22 +253,23 @@ Ubuntu16的不会有这个选择窗口，默认就行。
 ### 替换图形文件（法1）
 用WinSCP使用root权限登录到群辉。
 定位到**/usr/syno/synoman/synoSDSjslib/images**目录。
-下载文件：http://ofyfogrgx.bkt.clouddn.com/blog/20161222/105033516.zip
+下载文件：https://image.leolan.top/blog/20161222/105033516.zip
 替换该目录下的**dsm5_badge_num.png**和**dsm5_notification_num.png**文件
 
 ---
 ### 修改VERSION文件（法2）
 开启群晖系统的终端SSH功能，用任意ssh工具连接，账号密码是群晖系统的管理员账号和密码，连接进入系统sshell后；输入`su`(5.2及以下版本的系统)；`sudo -i`(6.0及以上版本的系统)后输入密码，进行提权（#号开头拥有root权限）
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/090936723.png)
+![mark](https://image.leolan.top/blog/20161222/090936723.png)
 ```
 cd /etc.defaults/
-vi VERSION```
+vi VERSION
+```
 文件内容是类似下面这样子的
 进官网查参数：https://www.synology.cn/zh-cn/releaseNote/DS3615xs
 经群晖系统升级界面看看可升级的最新版本是多少？最好不要跨大版本。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/101644792.png)
+![mark](https://image.leolan.top/blog/20161222/101644792.png)
 
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/101602040.png)
+![mark](https://image.leolan.top/blog/20161222/101602040.png)
 ```
 majorversion="5"        #大版本号
 minorversion="2"         #小版本
@@ -280,8 +298,9 @@ buildtime="17:15:53"
 DSM6.0后的DDNS没[3322.org](http://www.pubyun.com/)了。
 在自定义中添加以下代码就行啦！
 ```
-http://members.3322.net/dyndns/update?system=dyndns&hostname=__HOSTNAME__```
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/141001114.png)
+http://members.3322.net/dyndns/update?system=dyndns&hostname=__HOSTNAME__
+```
+![mark](https://image.leolan.top/blog/20161222/141001114.png)
 之后新建就能看到3322了。
 
 ---
@@ -300,7 +319,8 @@ mkdir git       #在硬盘中创建一个git目录，我们会把所有的git re
 cd git
 git init --bare testgit.git         #初始化一个版本库，并创建一个testgit.git项目仓库
 chown -R leolan:users testgit.git   
-# 格式【用户名:用户组】让git用户对这个板块库目录拥有可执行的权限，否则push的时候，是没有权限写入文件的```
+# 格式【用户名:用户组】让git用户对这个板块库目录拥有可执行的权限，否则push的时候，是没有权限写入文件的
+```
 服务端就OK了，接下来本地电脑克隆下来。
 ```
 git clone ssh://leolan@192.168.0.58/volume1/git/testgit.git          
@@ -327,7 +347,8 @@ git init --bare newgit.git  #创建新的仓库并初始化（初始化会清除
 
 ### 免密钥登录
 ```
-cat ~/.ssh/id_rsa.pub  #查看本地的ssh密钥，copy备用```
+cat ~/.ssh/id_rsa.pub  #查看本地的ssh密钥，copy备用
+```
 
 ```
 mkdir /volume1/homes/leolan/.ssh
@@ -344,14 +365,14 @@ RSAAuthentication yes
 PubkeyAuthentication yes     
 AuthorizedKeysFile  .ssh/authorized_keys
 ```
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161222/171554297.png)
+![mark](https://image.leolan.top/blog/20161222/171554297.png)
 然后在群晖系统中停用ssh功能，再次开启。就能免密钥操作啦！
 
 ---
 ## VPN
 群晖的VPN服务是安装套件的，简单设置就行
 但是群晖连接别的VPN并不是在套件中设置的，而是在网络中设置
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/164348644.png)
+![mark](https://image.leolan.top/blog/20161227/164348644.png)
 填写IP，账号密码就行，其他不知道的参数默认就行。
 
 ---
@@ -376,7 +397,8 @@ python get-pip.py
 pip install shadowsocks
 pip install crypto
 ​cd /etc/
-vi shadowsocks.json```
+vi shadowsocks.json
+```
 内容如下：配置文件参考：[编写配置文件](www.leolan.top/posts/13905)
 ```
 { 
@@ -388,26 +410,29 @@ vi shadowsocks.json```
 "timeout":300, 
 "method":"aes-256-cfb",        #加密方式
 "fast_open": false             #FS加速
-}```
+}
+```
 
 退出保存并运行服务
 ```
-sslocal -c /etc/shadowsocks.json -d start```
+sslocal -c /etc/shadowsocks.json -d start
+```
 
 设置开机自启
 ```
 vi /etc/rc
 #光标移动到最底下，在exit 0 之前添加以下这一句，保存退出。
-sslocal -c /etc/shadowsocks.json -d start```
+sslocal -c /etc/shadowsocks.json -d start
+```
 
 添加开机自启也可以通过计划任务添加，只是麻烦一点
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/163522654.png)
+![mark](https://image.leolan.top/blog/20161227/163522654.png)
 
 ---
 ### Docker安装SS
 Docker安装也是可行的，直接下载安装，一定要看镜像说明，不同的作者定义的端口不同，打开看了才知道端口是什么。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/163803852.png)
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161227/164015157.png)
+![mark](https://image.leolan.top/blog/20161227/163803852.png)
+![mark](https://image.leolan.top/blog/20161227/164015157.png)
 这里的端口是1984，运行Docker容器后，代理的端口,设置1984就OK了（当然，1984只是容器端口，真正的端口取决于你映射出来的端口）
 
 ---
@@ -460,16 +485,19 @@ make install
 ```
 这样 ss 就会编译到 /root/dist/ss 目录，这个时候打包:
 ```
-tar cvf shadowsocks.tar ss/```
+tar cvf shadowsocks.tar ss/
+```
 登录群晖终端从远程取回文件：
 ```
-scp xxx@xxx.xxx.xxx.xxx:/root/dist/shadowsocks.tar .```
+scp xxx@xxx.xxx.xxx.xxx:/root/dist/shadowsocks.tar .
+```
 
 **运行**
 
 需要知道的是 shadowsocks 是一个 socket 代理，而群晖 NAS 只支持 HTTP 代理，所以我们需要 Privoxy软件转换下，幸运的是 ipkg 里面刚好有此软件包。
 ```
-sudo ipkg install privoxy```
+sudo ipkg install privoxy
+```
 新建 shadowsocks 配置文件 config.json，内容如下：
 ```
 {
@@ -479,23 +507,26 @@ sudo ipkg install privoxy```
  "password":"xxxx",
  "method":"aes-256-cfb",
  "timeout":60
-}```
+}
+```
 新建 Privoxy 配置文件 privoxy.config：
 ```
 listen-address 127.0.0.1:16801  #监听本地的16801端口
 forward / .
 forward-socks5 .dropbox.com 127.0.0.1:16800 . #把访问 dropbox 的数据都通过ss 的代理端口转发出去
 forward-socks5 .tmdb.org 127.0.0.1:16800 .  #把访问 tmdb 的数据都通过ss 的代理端口转发出去
-#forward-socks5 / 127.0.0.1:16800 . #全部转发```
+#forward-socks5 / 127.0.0.1:16800 . #全部转发
+```
 
 表示监听本地 16801 的端口数据转发到本地的socks5 16800 端口。这里只有两个网站的数据经过 ss 代理，一个是 Dropbox ，另一个是 tmdb（VideoStation 封面数据抓取网址）。如果需要更多可以一个个添加进去或者使用 actionfiles。
 
 后台运行：
 ```
 ./ss-local -c config.json & 
-privoxy privoxy.config```
+privoxy privoxy.config
+```
 然后进 NAS 设置一下就 OK 了：
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161228/120135818.png)
+![mark](https://image.leolan.top/blog/20161228/120135818.png)
 
 ---
 **自动运行**
@@ -530,7 +561,8 @@ else
 }
 fi
 privoxy ~/Software/ShadowSocks/privoxy.config
-echo "privoxy lunched!"```
+echo "privoxy lunched!"
+```
 
 ---
 ## ipkg、opkg、dpkg、Entware
@@ -555,7 +587,8 @@ rm syno-i686-bootstrap_1.2-7_i686.xsh
 vi /root/.profile
 
 #在PATH的等号后面加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
-/opt/bin:```
+/opt/bin:
+```
 然后保存退出，重启DSM（必须重启），重启运行`ipkg update`，之后就可以使用ipkg命令啦。
 
 ---
@@ -570,7 +603,8 @@ chmod +x qnapware_install_x86.sh
 vi /etc/profile
 vi /root/.profile
 #分别在这两个文件的export CLASSPATH PATH JAVA_HOME LANG # Synology Java runtime enviroment（最后一行）的下一行加入以下这一句(注意格式和其他一样，千万不要改错了，不然几乎全部命令都失效)
-PATH=$PATH:/Apps/opt/bin:/Apps/opt/sbin```
+PATH=$PATH:/Apps/opt/bin:/Apps/opt/sbin
+```
 然后保存退出，重启DSM（必须重启），重启运行`opkg update`，之后就可以使用opkg命令啦。
 
 ---
@@ -597,12 +631,13 @@ opkg update
 opkg install aria2
 
 #启动aria2
-aria2c --enable-rpc=true --rpc-listen-all=true --rpc-allow-origin-all=true --dir=/volume1/139G/aria2(这里是你的存储位置)/ --file-allocation=none -s 5 -j 3 -x 5 -c -D```
+aria2c --enable-rpc=true --rpc-listen-all=true --rpc-allow-origin-all=true --dir=/volume1/139G/aria2(这里是你的存储位置)/ --file-allocation=none -s 5 -j 3 -x 5 -c -D
+```
 下载Aria2管理界面：[webui-aria2](https://github.com/ziahamza/webui-aria2)
 解压后得到webui-aria2-master文件夹，改名为aria2放在web网站根目录
 然后通过：**http://群晖IP/aria2/**  访问
 然后就可以正常使用了，速度还是很快的
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20161229/145417486.png)
+![mark](https://image.leolan.top/blog/20161229/145417486.png)
 
 Aria2配置参考：http://aria2c.com/usage.html
 
@@ -628,13 +663,13 @@ http://www.nasyun.com/forum.php?mod=viewthread&tid=26077&pid=83563&page=1&extra=
 在群晖中群晖中安装此第三方套件之后就可以在群晖中运行虚拟机了。目前是还有版本范围限制，目前只支持x86以上且支持虚拟化的CPU。
 
 官网：http://spk.diablos-netzwerk.de/#showhistory_virtualbox
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20170112/110804674.png)
+![mark](https://image.leolan.top/blog/20170112/110804674.png)
 
 先在设置中打开**Web Station**服务，然后在套件中心添加第三方源：http://spk.diablos-netzwerk.de
 保存刷新之后就能在套件中心看到这个插件了。
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20170112/111010324.png)
+![mark](https://image.leolan.top/blog/20170112/111010324.png)
 
-![mark](http://ofyfogrgx.bkt.clouddn.com/blog/20170112/112101700.png)
+![mark](https://image.leolan.top/blog/20170112/112101700.png)
 
 
 ---
@@ -647,9 +682,9 @@ http://www.nasyun.com/forum.php?mod=viewthread&tid=26077&pid=83563&page=1&extra=
 要知道自己机器平台参考：https://github.com/SynoCommunity/spksrc/wiki/Architecture-per-Synology-model
 
 在套件中心设置
-![mark](http://ofyfogrgx.bkt.clouddn.com/image/20170426/124313634.png)
+![mark](https://image.leolan.top/image/20170426/124313634.png)
 群晖<font color=#0080ff>控制面板–>网络–>网络界面–>管理–>Open vSwitch设置</font>，启用Open vSwitch。
-![mark](http://ofyfogrgx.bkt.clouddn.com/image/20170426/125710448.png)
+![mark](https://image.leolan.top/image/20170426/125710448.png)
 
 然后手动安装这两个套件。
 
